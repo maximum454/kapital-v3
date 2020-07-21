@@ -1,0 +1,55 @@
+.currency{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	&__btn{
+		display: block;
+		margin-right: 20px;
+		background-image: url("../img/currency-graf.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 65px;
+		height: 37px;
+	}
+	&__body{
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(33px, 55px));
+		grid-column-gap: 20px;
+	}
+	&__item{
+
+	}
+	&__name{
+		font-size: 11px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	&__price{
+		font-size: 12px;
+		font-weight: 600;
+	}
+	&__count{
+		font-size: 10px;
+		font-weight: 600;
+		&.up{
+			color: #00B25D;
+		}
+		&.down{
+			color: red;
+		}
+	}
+	&__arrow{
+		display: block;
+		text-decoration: none;
+		width: 40px;
+		height: 40px;
+		border-left: 1px solid #C4C4C4;
+		background-image: url("../img/currency-arrow.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 9px 18px;
+	}
+}

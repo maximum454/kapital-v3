@@ -1,0 +1,50 @@
+.header{
+	background-color: #FFFFFF;
+	padding: 9px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 1px;
+		height: 100%;
+		background-color: red;
+		pointer-events: none;
+	}
+	&__body{
+		width: 100%;
+		
+	}
+
+	&__currency{
+		grid-area: currency;
+		max-width: 480px;
+	}
+	&__logo{
+		grid-area: logo;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 1px;
+			height: 100%;
+			background-color: red;
+			pointer-events: none;
+		}
+	}
+	&__search{
+		grid-area: search;
+		max-width: 266px;
+	}
+	&__social{
+		grid-area: social;
+	}
+	&__nav{
+		grid-area: nav;
+	}
+}

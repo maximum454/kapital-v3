@@ -1,0 +1,31 @@
+.search-header{
+	position: relative;
+	&__input{
+		width: 100%;
+		border: 1px solid #F2F2F2;
+		font-size: 12px;
+		font-weight: 500;
+		padding: 6px 33px;
+		font-family: $Montserrat;
+		&::-webkit-input-placeholder{
+			color: #000000;
+		}
+		&:focus{
+			border-color: #00B25D;
+			outline: none;
+		}
+	}
+	&__btn{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url("../img//search-header.svg");
+		background-position: center;
+		background-size: 17px;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		border: none;
+		width: 30px;
+		height: 100%;
+	}
+}

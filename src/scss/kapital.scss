@@ -1,0 +1,37 @@
+@import 'partials/normalize';
+@import 'fonts';
+@import 'mixin';
+//@import 'partials/bootstrap-grid';
+@import 'partials/slick';
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #E3E3E3;
+	font-family: $Montserrat;
+	&.lock{
+		overflow: hidden;
+	}
+}
+.wrp{
+
+}
+h2{
+
+}
+
+.container{
+	max-width: 1360px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+@import "componets/header";
+@import "componets/currency";
+@import "componets/search-header";
+@import "componets/social-header";
+@import "componets/footer";

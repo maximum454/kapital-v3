@@ -1,0 +1,36 @@
+.social-header{
+	&__title{
+		font-size: 12px;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	&__body{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 40px);
+		grid-column-gap: 2px;
+	}
+	&__link{
+		display: block;
+		text-decoration: none;
+		border: 1px solid #F2F2F2;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 40px;
+		&.instagram{
+			background-image: url("../img/icons/icons.svg#FaceBook");
+		}
+		&.facebook{
+			background-image: url("../img/icons/icons.svg#FaceBook");
+		}
+		&.twitter{
+			background-image: url("../img/icons/icons.svg#Twitter");
+		}
+		&.telegram{
+			background-image: url("../img/icons/icons.svg#Telegram");
+		}
+		&.vkontakte{
+			background-image: url("../img/icons/icons.svg#VK");
+		}
+	}
+}

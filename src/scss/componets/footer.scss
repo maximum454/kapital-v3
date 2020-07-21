@@ -1,0 +1,101 @@
+.footer {
+	&__body{
+		background-color: #232323;
+		padding: 25px 40px 20px;
+		display: grid;
+		grid-template-columns:minmax(117px, 184px)  1fr auto;
+		grid-template-areas: 'logo menu informers' 'copyrights copyrights copyrights';
+		grid-column-gap: 30px;
+		grid-row-gap: 15px;
+		align-items: center;
+	}
+	&__logo{
+		grid-area: logo;
+		display: block;
+		margin: 0;
+		text-decoration: none;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__menu{
+		grid-area: menu;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			margin: 5px 20px 5px -2px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		.link{
+			color: #FFFFFF;
+			@include adaptive-font(14,12);
+			font-weight: 600;
+			text-decoration: none;
+			border-bottom: 1px solid;
+			&:hover{
+				opacity: .8;
+			}
+		}
+	}
+
+	&__informers{
+		grid-area: informers;
+		display: flex;
+		justify-content: flex-end;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		div{
+			&:last-of-type{
+				margin-left: 10px;
+			}
+		}
+
+	}
+	&__copyrights{
+		grid-area: copyrights;
+		color: #C4C4C4;
+		@include adaptive-font(11,7);
+		line-height: 15px;
+		font-weight: 600;
+	}
+
+	@include r(861){
+		&__body{
+			grid-template-columns:minmax(117px, 184px)  1fr;
+			grid-template-areas: 'logo informers' 'menu menu' 'copyrights copyrights';
+		}
+
+	}
+	@include r(600){
+		&__menu{
+			justify-content: space-between;
+			li{
+				margin-right: 0;
+			}
+		}
+		&__copyrights{
+			line-height: 10px;
+		}
+
+	}
+	@include r(540){
+		&__body{
+			grid-template-columns:117px  1fr;
+			padding: 10px;
+		}
+		&__copyrights{
+			line-height: 8px;
+			font-weight: 500;
+		}
+	}
+}
