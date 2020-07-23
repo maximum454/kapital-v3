@@ -1,16 +1,122 @@
-.nav{
-	&__burger{
-
-	}
-	&__menu{
-		margin: 0;
+.nav {
+	min-width: 200px;
+	position: relative;
+	white-space: nowrap;
+	&__menu {
+		display: inline-block;
+		list-style-type: none;
 		padding: 0;
-		list-style: none;
+		margin: 0;
 	}
-	&__item{
 
+	&__item {
+		display: inline-block;
+		background-color: #F2F2F2;
+		margin: 0 -1px;
 	}
-	&__link{
-		
+
+	&__link {
+		color: #404040;
+		display: inline-block;
+		padding: 4px 10px 6px;
+		font-weight: 700;
+		font-size: 14px;
+		text-decoration: none;
+	}
+
+	&__dropdown {
+		padding: 2rem;
+		white-space: nowrap;
+		top: 80%;
+		right: 0;
+		background-color: #068df6;
+		transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
+		transform-origin: center top;
+		transform: rotateX(-30deg);
+		opacity: 0;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 0;
+			width: 0;
+			border-bottom: 6px solid #068df6;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			content: '';
+			top: -6px;
+			right: 4rem;
+		}
+
+		&.show {
+			transform: rotateX(0deg);
+			opacity: 1;
+			visibility: visible;
+			box-shadow: 0 0 20px 0 rgba(49, 49, 49, 0.25);
+			transition: 300ms cubic-bezier(0.25, 2, 0.25, 1),
+			box-shadow 1000ms cubic-bezier(0.25, 2, 0.25, 1);
+		}
+
+		li {
+			display: block;
+			&:first-child {
+				a {
+					padding-left: 2rem;
+				}
+			}
+		}
+
+		a {
+			display: inline-block;
+			padding: .5rem 2rem;
+			font-weight: 400;
+			font-size: 1.6rem;
+		}
+
+		&-wrapper {
+			display: inline-block;
+			perspective: 500px;
+		}
+
+		&-toggle {
+			outline: none;
+			display: inline-block;
+			border: none;
+			margin-left: 3px;
+			font-weight: 700;
+			color: #404040;
+			font-size: 14px;
+			padding: 4px 10px 6px;
+		}
+	}
+
+	.knob {
+		cursor: ew-resize;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%) translateX(50%);
+	}
+
+	@media (max-width: 1000px) {
+		.knob {
+			display: none;
+		}
+	}
+	@media (max-width: 650px) {
+		&__dropdown {
+			right: auto;
+			left: 0;
+
+			&:after {
+				right: auto;
+				left: 4rem;
+			}
+
+			&-wrapper {
+				position: static !important;
+			}
+		}
 	}
 }

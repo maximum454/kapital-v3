@@ -1,0 +1,27 @@
+.information-article{
+	display: flex;
+	align-items: center;
+	font-size: 10px;
+	font-weight: 500;
+	&__category {
+		color: #00B25D;
+		text-decoration: none;
+		margin-right: 10px;
+	}
+
+	&__date {
+		color: #777777;
+		margin-right: 10px;
+
+	}
+
+	&__count {
+		color: #777777;
+		font-size: 10px;
+		padding-left: 10px;
+		background-image: url("../img/icons/icons.svg#count");
+		background-size: 7px;
+		background-position: center left;
+		background-repeat: no-repeat;
+	}
+}

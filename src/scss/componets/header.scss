@@ -15,16 +15,24 @@
 	}
 	&__body{
 		width: 100%;
-		
+		display: grid;
+		grid-template-areas: 'currency logo search social' 'nav nav nav nav';
+		grid-template-columns: minmax(400px,438px) minmax(150px,286px) auto 148px;
+		justify-content: space-between;
+		grid-column-gap: 20px;
 	}
 
 	&__currency{
 		grid-area: currency;
-		max-width: 480px;
+		max-width: 438px;
 	}
 	&__logo{
 		grid-area: logo;
 		position: relative;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
 		&:before{
 			content: '';
 			position: absolute;
@@ -43,6 +51,7 @@
 	}
 	&__social{
 		grid-area: social;
+		padding-top: 8px;
 	}
 	&__nav{
 		grid-area: nav;

@@ -5,7 +5,6 @@
 	justify-content: flex-start;
 	&__btn{
 		display: block;
-		margin-right: 20px;
 		background-image: url("../img/currency-graf.svg");
 		background-position: center;
 		background-repeat: no-repeat;
@@ -16,8 +15,9 @@
 	&__body{
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(33px, 55px));
+		grid-template-columns: repeat(5,1fr);
 		grid-column-gap: 20px;
+		padding: 0 20px;
 	}
 	&__item{
 
@@ -44,11 +44,11 @@
 	&__arrow{
 		display: block;
 		text-decoration: none;
-		width: 40px;
+		width: 29px;
 		height: 40px;
 		border-left: 1px solid #C4C4C4;
 		background-image: url("../img/currency-arrow.svg");
-		background-position: center;
+		background-position: center right;
 		background-repeat: no-repeat;
 		background-size: 9px 18px;
 	}

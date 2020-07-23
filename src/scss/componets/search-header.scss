@@ -1,5 +1,7 @@
 .search-header{
 	position: relative;
+	display: flex;
+	align-items: center;
 	&__input{
 		width: 100%;
 		border: 1px solid #F2F2F2;

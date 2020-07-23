@@ -1,0 +1,30 @@
+.quote-day{
+	padding: 20px;
+	background-color: #ffffff;
+	margin: 10px 0;
+	&__title{
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		text-decoration: none;
+		display: block;
+		span{
+			border-top: 3px solid #00B25D;
+		}
+	}
+	&__link{
+		color: #404040;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 700;
+		text-decoration: none;
+		&:hover{
+			opacity:.8;
+		}
+	}
+	&__span{
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: normal;
+	}
+}

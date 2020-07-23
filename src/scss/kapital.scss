@@ -3,6 +3,7 @@
 @import 'mixin';
 //@import 'partials/bootstrap-grid';
 @import 'partials/slick';
+@import 'componets/priority-nav-core';
 
 *{
 	box-sizing: border-box;
@@ -29,9 +30,35 @@ h2{
 	padding-right: 15px;
 }
 
-
+//Шапка
 @import "componets/header";
+
+//навигация в шапке
+@import "componets/nav";
+
+//Курс валюты
 @import "componets/currency";
+
+//Поиск в шапке
 @import "componets/search-header";
+
+//Соц сети в шапке
 @import "componets/social-header";
+
+// 3 колончатый контент
+@import "componets/main";
+
+//цитата дня
+@import "componets/quote-day";
+
+//Лента новостей
+@import "componets/news-feed";
+
+// Информация даты счетсика и категории
+@import "componets/information-article";
+
+//Подвал
 @import "componets/footer";
+
+//Слайдер спецпроектов
+@import "componets/special-slider";
