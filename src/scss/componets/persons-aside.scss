@@ -1,0 +1,49 @@
+.persons-aside{
+	padding: 20px 20px 0;
+	margin: 10px auto;
+	background-color: #ffffff;
+	&__title{
+		font-size: 18px;
+		color: #404040;
+		font-weight: 800;
+		letter-spacing: .2px;
+		text-decoration: none;
+		display: block;
+	}
+	&__item{
+		text-decoration: none;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 10px;
+		padding: 15px 0;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -20px;
+			background-color: #E3E3E3;
+			width: calc(100% + 40px);
+			height: 1px;
+		}
+	}
+	&__img{
+		max-width: 91px;
+		position: relative;
+		img{
+			display: block;
+		}
+	}
+	&__txt{
+		padding-top: 3px;
+	}
+	&__info{
+		margin-bottom: 4px;
+	}
+	&__name{
+		color: #232323;
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 600;
+	}
+}

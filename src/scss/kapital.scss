@@ -29,6 +29,20 @@ h2{
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.ad-container{
+	margin: 10px auto;
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.first-letter{
+	&:first-letter {
+		border-top: 3px solid #00B25D;
+	}
+}
 
 //Шапка
 @import "componets/header";
@@ -62,3 +76,9 @@ h2{
 
 //Слайдер спецпроектов
 @import "componets/special-slider";
+
+//Персоны в правом сайдбаре
+@import "componets/persons-aside";
+
+//Новости на главной
+@import "componets/main-news";
