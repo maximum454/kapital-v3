@@ -8,10 +8,11 @@
 		font-weight: 900;
 		text-decoration: none;
 		display: block;
+		margin-bottom: 5px;
 	}
 
 	&__item {
-		padding: 10px 0;
+		padding: 10px 0 15px;
 		position: relative;
 		&:after{
 			content: '';
@@ -30,17 +31,20 @@
 	}
 
 	&__info {
-		margin-bottom: 5px;
+		margin-bottom: 7px;
 	}
 	&__name{
+		display: block;
 		color: #232323;
 		font-size: 14px;
 		line-height: 16px;
 		font-weight: 600;
 		text-decoration: none;
+		margin-bottom: 5px;
 	}
 	&__anons{
 		font-size: 12px;
 		line-height: 14px;
+		margin: 0;
 	}
 }

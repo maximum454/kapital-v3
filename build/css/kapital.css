@@ -1173,7 +1173,7 @@ body.lock {
 }
 
 .quote-day {
-  padding: 20px;
+  padding: 21px 20px;
   background-color: #ffffff;
   margin: 10px 0;
 }
@@ -1184,6 +1184,7 @@ body.lock {
   margin-bottom: 10px;
   text-decoration: none;
   display: block;
+  letter-spacing: .2px;
 }
 
 .quote-day__title span {
@@ -1220,10 +1221,11 @@ body.lock {
   font-weight: 900;
   text-decoration: none;
   display: block;
+  margin-bottom: 5px;
 }
 
 .news-feed__item {
-  padding: 10px 0;
+  padding: 10px 0 15px;
   position: relative;
 }
 
@@ -1242,20 +1244,23 @@ body.lock {
 }
 
 .news-feed__info {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .news-feed__name {
+  display: block;
   color: #232323;
   font-size: 14px;
   line-height: 16px;
   font-weight: 600;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 
 .news-feed__anons {
   font-size: 12px;
   line-height: 14px;
+  margin: 0;
 }
 
 .information-article {

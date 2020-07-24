@@ -1,5 +1,5 @@
 .quote-day{
-	padding: 20px;
+	padding: 21px 20px;
 	background-color: #ffffff;
 	margin: 10px 0;
 	&__title{
@@ -8,6 +8,7 @@
 		margin-bottom: 10px;
 		text-decoration: none;
 		display: block;
+		letter-spacing: .2px;
 		span{
 			border-top: 3px solid #00B25D;
 		}
