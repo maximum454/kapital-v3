@@ -1,0 +1,46 @@
+.nomination-aside{
+	background-color: #ffffff;
+	padding: 20px 20px 0;
+	margin: 10px auto;
+	&__title{
+		font-size: 18px;
+		color: #404040;
+		font-weight: 800;
+		letter-spacing: .2px;
+		text-decoration: none;
+		display: block;
+		margin-bottom: 4px;
+	}
+	&__item{
+		text-decoration: none;
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(91px,auto));
+		grid-column-gap: 10px;
+		grid-row-gap: 20px;
+		padding: 15px 0;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -20px;
+			background-color: rgba(#000,.15);
+			width: calc(100% + 40px);
+			height: 1px;
+		}
+	}
+	&__info{
+		margin-bottom: 3px;
+	}
+	&__img{
+		margin: 0;
+	}
+	&__name{
+		color: #232323;
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 600;
+		text-decoration: none;
+		display: block;
+	}
+}

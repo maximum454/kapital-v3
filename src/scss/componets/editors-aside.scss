@@ -1,0 +1,48 @@
+.editors-aside{
+	background-color: #ffffff;
+	padding: 20px 20px 10px;
+	margin: 10px auto;
+	&__title{
+		font-size: 18px;
+		color: #404040;
+		font-weight: 800;
+		letter-spacing: .2px;
+		text-decoration: none;
+		display: block;
+		margin-bottom: 19px;
+	}
+	&__body{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+	}
+	&__item{
+		position: relative;
+	}
+	&__info{
+		margin-bottom: 5px;
+		.information-article__category{
+			margin-bottom: 4px;
+		}
+	}
+	&__img{
+		text-decoration: none;
+		display: block;
+		margin-bottom: 4px;
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+	&__txt{}
+	&__name{
+		color: #232323;
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 600;
+		text-decoration: none;
+		display: block;
+	}
+}

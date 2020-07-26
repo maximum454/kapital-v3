@@ -2,6 +2,7 @@
 	background-color: #ffffff;
 	padding:0 40px;
 	&.dark{
+		margin-top: 10px;
 		background-color: #404040;
 		border-left: 10px solid #00B25D;
 		.main-news__title{
@@ -21,13 +22,7 @@
 				height: 1px;
 			}
 			&:after{
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: -40px;
 				background-color: rgba(#fff,.15);
-				width: calc(100% + 80px);
-				height: 1px;
 			}
 		}
 		.main-news__name{
