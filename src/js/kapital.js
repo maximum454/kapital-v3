@@ -13,6 +13,7 @@ $(function(){
         navDropdownToggleClassName: "nav__dropdown-toggle",
     });
 
+    //Слайдер спецпроевтов в сайдбаре
     $('.js-special-slider').slick({
         dots: true,
         arrows: true,
@@ -22,6 +23,15 @@ $(function(){
         slidesToScroll: 1,
     });
 
+    //слайдер выбор редакции в сайдбаре
+    $('.js-editors-slider').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
 
     //табы популярные новости
     function loadPopularNews(filterBy) {
