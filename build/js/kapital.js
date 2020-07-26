@@ -4573,5 +4573,24 @@ $(function(){
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-    })
+    });
+
+
+    //табы популярные новости
+    function loadPopularNews(filterBy) {
+        $('.js-popular-aside').hide();
+        $('#js-popular-aside-'+ filterBy).show();
+    }
+    $(".popular-aside__widget").on('click',function () {
+        var filterBy = this.dataset.filterby || null;
+
+        if (!filterBy) {
+            return false;
+        }
+
+        $(".popular-aside__widget").removeClass("popular-aside__widget--selected");
+        $(this).addClass("popular-aside__widget--selected");
+        loadPopularNews(filterBy);
+    });
+    loadPopularNews('week');
 });
