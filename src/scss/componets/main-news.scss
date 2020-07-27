@@ -42,7 +42,7 @@
 		padding: 15px 0;
 		position: relative;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+		grid-template-columns: repeat(auto-fit, minmax(160px,auto));
 		grid-column-gap: 20px;
 		grid-row-gap: 20px;
 		&:after{
@@ -59,6 +59,10 @@
 		display: block;
 		text-decoration: none;
 		max-width: 200px;
+		img{
+			max-width: 100%;
+			display: block;
+		}
 	}
 	&__info{
 		margin-bottom: 3px;
@@ -79,5 +83,19 @@
 		font-weight: 500;
 		text-decoration: none;
 		margin: 0;
+	}
+	@include r(1024){
+		padding: 0 20px;
+		&__item{
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: -20px;
+				background-color: rgba(#000,.15);
+				width: calc(100% + 40px);
+				height: 1px;
+			}
+		}
 	}
 }

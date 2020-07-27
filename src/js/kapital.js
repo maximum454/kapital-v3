@@ -11,6 +11,7 @@ $(function(){
         navDropdownLabel: '...',
         navDropdownClassName: "nav__dropdown",
         navDropdownToggleClassName: "nav__dropdown-toggle",
+        breakPoint: 767,
     });
 
     //Слайдер спецпроевтов в сайдбаре
@@ -28,9 +29,7 @@ $(function(){
         dots: true,
         arrows: true,
         infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        speed: 300
     });
 
     //табы популярные новости

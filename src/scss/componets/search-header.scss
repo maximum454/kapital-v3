@@ -20,7 +20,7 @@
 	&__btn{
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: 3px;
 		background-image: url("../img//search-header.svg");
 		background-position: center;
 		background-size: 17px;
@@ -29,5 +29,15 @@
 		border: none;
 		width: 30px;
 		height: 100%;
+	}
+	@include r(767){
+		&__input{
+			position: absolute;
+			display: none;
+		}
+		&__btn{
+			position: relative;
+			height: 30px;
+		}
 	}
 }

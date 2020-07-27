@@ -3,33 +3,35 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	&__btn{
+	&__graf{
 		display: block;
 		background-image: url("../img/currency-graf.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 100%;
-		width: 65px;
+		width: 84px;
 		height: 37px;
 	}
 	&__body{
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(5,1fr);
-		grid-column-gap: 20px;
+		grid-column-gap: 10px;
 		padding: 0 20px;
 	}
 	&__item{
-
 	}
 	&__name{
+		color: #000000;
 		font-size: 11px;
 		font-weight: 500;
 		text-transform: uppercase;
+		margin-bottom: 2px;
 	}
 	&__price{
 		font-size: 12px;
 		font-weight: 600;
+		margin-bottom: 2px;
 	}
 	&__count{
 		font-size: 10px;
@@ -44,12 +46,61 @@
 	&__arrow{
 		display: block;
 		text-decoration: none;
-		width: 29px;
+		width: 40px;
 		height: 40px;
 		border-left: 1px solid #C4C4C4;
 		background-image: url("../img/currency-arrow.svg");
-		background-position: center right;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 9px 18px;
+	}
+	@include r(1024){
+		&__body{
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-column-gap: 1px;
+			padding: 0 20px;
+		}
+		&__item{
+			&:nth-child(n+4){
+				display: none;
+			}
+		}
+	}
+	@include r(767){
+		&__body{
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(5,1fr);
+			grid-column-gap: 20px;
+			padding: 0 20px;
+		}
+		&__item{
+			&:nth-child(n+4){
+				display: block;
+			}
+		}
+	}
+	@include r(480){
+		background-color: #404040;
+		padding: 5px 10px;
+		&__body{
+			padding: 0;
+			grid-column-gap: 5px;
+		}
+		&__graf{
+			display: none;
+		}
+		&__name{
+			color: #ffffff;
+		}
+		&__price{
+			color: #ffffff;
+		}
+		&__arrow{
+			border-color: #777777;
+			background-image: url("../img/currency-arrow-light.svg");
+		}
 	}
 }

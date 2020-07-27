@@ -1,8 +1,11 @@
 .social-header{
+	position: relative;
 	&__title{
+		position: absolute;
 		font-size: 12px;
 		font-weight: 500;
 		margin-bottom: 5px;
+		top: -17px;
 	}
 	&__body{
 		display: grid;
@@ -18,8 +21,9 @@
 		background-position: center;
 		width: 28px;
 		height: 28px;
+		border: 2px solid #F2F2F2;
 		&.instagram{
-			background-image: url("../img/icons/icons.svg#FaceBook");
+			background-image: url("../img/icons/icons.svg#Whatsapp");
 		}
 		&.facebook{
 			background-image: url("../img/icons/icons.svg#FaceBook");
@@ -32,6 +36,7 @@
 		}
 		&.vkontakte{
 			background-image: url("../img/icons/icons.svg#VK");
+			background-size: 18px;
 		}
 	}
 }

@@ -24,11 +24,15 @@ h2{
 }
 
 .container{
-	max-width: 1360px;
+	max-width: 1330px;
+	min-width: 290px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	@include r(480){
+		padding: 0;
+	}
 }
 .ad-container{
 	margin: 10px auto;
