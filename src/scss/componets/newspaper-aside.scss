@@ -13,12 +13,13 @@
 	}
 	&__img{
 		position: relative;
-		margin-left: 35px;
+		width: 201px;
+		margin: 0 auto;
 		&:after{
 			content: '';
 			position: absolute;
 			top: 20px;
-			right: 43px;
+			right: 0;
 			background-image: url("../img/newspaper-pdf.png");
 			background-repeat: no-repeat;
 			background-position: center right;

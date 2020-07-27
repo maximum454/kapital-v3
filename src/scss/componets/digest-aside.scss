@@ -69,4 +69,15 @@
 		cursor: pointer;
 		outline: none;
 	}
+
+	@include r(767){
+		&__txt{
+			margin-bottom: 30px;
+		}
+		&__anons{
+			&:before{
+				left: -50px;
+			}
+		}
+	}
 }

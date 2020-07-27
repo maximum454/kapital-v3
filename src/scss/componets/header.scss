@@ -67,6 +67,9 @@
 	}
 	@include r(480){
 		padding-bottom: 0;
+		&__body{
+			grid-row-gap: 10px;
+		}
 		&__search{
 			padding: 0 20px;
 

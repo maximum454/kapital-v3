@@ -1398,6 +1398,7 @@ body.lock {
   padding: 16px 20px;
   height: 214px;
   overflow: hidden;
+  display: none;
   /* Arrows */
   /* Dots */
 }
@@ -1550,7 +1551,7 @@ body.lock {
 .persons-aside__item {
   text-decoration: none;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   grid-column-gap: 10px;
   padding: 15px 0;
   position: relative;
@@ -1695,6 +1696,7 @@ body.lock {
   padding: 20px 20px 10px;
   margin: 10px auto;
   overflow: hidden;
+  display: none;
   /* Arrows */
   /* Dots */
 }
@@ -1881,7 +1883,7 @@ body.lock {
   text-decoration: none;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(91px, auto));
+  grid-template-columns: minmax(91px, auto) 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 20px;
   padding: 15px 0;
@@ -1935,6 +1937,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 10px;
   border-top: 1px solid #DDDDDD;
 }
@@ -2088,7 +2093,8 @@ body.lock {
 
 .newspaper-aside__img {
   position: relative;
-  margin-left: 35px;
+  width: 201px;
+  margin: 0 auto;
 }
 
 .no-webp .newspaper-aside__img:after{
@@ -2098,7 +2104,7 @@ body.lock {
   content: '';
   position: absolute;
   top: 20px;
-  right: 43px;
+  right: 0;
   background-repeat: no-repeat;
   background-position: center right;
   z-index: 1;
@@ -2184,7 +2190,7 @@ body.lock {
 .popular-aside__item {
   text-decoration: none;
   display: grid;
-  grid-template-columns: minmax(91px, auto) auto;
+  grid-template-columns: minmax(91px, auto) 1fr;
   grid-column-gap: 10px;
   padding: 15px 0;
   position: relative;
@@ -2363,6 +2369,14 @@ body.lock {
     grid-template-areas: 'contant' 'aside-left ' 'aside-right';
     grid-template-columns: 1fr;
   }
+
+  .digest-aside__txt {
+    margin-bottom: 30px;
+  }
+
+  .digest-aside__anons:before {
+    left: -50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2410,6 +2424,10 @@ body.lock {
 
   .header {
     padding-bottom: 0;
+  }
+
+  .header__body {
+    grid-row-gap: 10px;
   }
 
   .header__search {

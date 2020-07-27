@@ -15,7 +15,7 @@
 		text-decoration: none;
 		position: relative;
 		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(91px,auto));
+		grid-template-columns: minmax(91px,auto) 1fr;
 		grid-column-gap: 10px;
 		grid-row-gap: 20px;
 		padding: 15px 0;

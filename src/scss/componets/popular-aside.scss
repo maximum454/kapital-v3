@@ -41,7 +41,7 @@
 	&__item{
 		text-decoration: none;
 		display: grid;
-		grid-template-columns: minmax(91px,auto) auto;
+		grid-template-columns: minmax(91px,auto) 1fr;
 		grid-column-gap: 10px;
 		padding: 15px 0;
 		position: relative;
