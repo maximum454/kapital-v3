@@ -98,4 +98,10 @@
 			}
 		}
 	}
+	@include r(480){
+		&.dark{
+			margin-top: 0;
+			padding: 0 20px 0 10px;
+		}
+	}
 }

@@ -4,7 +4,6 @@
 	padding: 16px 20px;
 	height: 214px;
 	overflow: hidden;
-	display: none;
 	&__title {
 		font-size: 18px;
 		color: #404040;
@@ -16,6 +15,9 @@
 
 	&__body {
 		position: relative;
+		overflow: hidden;
+		max-width: 280px;
+		margin: 0 auto;
 	}
 
 	&__item {
@@ -27,6 +29,7 @@
 		margin-bottom: 10px;
 		img{
 			display: block;
+			margin: 0 auto;
 		}
 	}
 
@@ -120,5 +123,8 @@
 				}
 			}
 		}
+	}
+	@include r(480){
+		margin: 0;
 	}
 }

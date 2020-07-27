@@ -3,7 +3,6 @@
 	padding: 20px 20px 10px;
 	margin: 10px auto;
 	overflow: hidden;
-	display: none;
 	&__title{
 		font-size: 18px;
 		color: #404040;
@@ -14,6 +13,12 @@
 		margin-bottom: 19px;
 	}
 	&__body{
+		position: relative;
+		overflow: hidden;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	&__contant{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 20px;
@@ -49,7 +54,7 @@
 	}
 
 	.slick-list {
-		margin-bottom: 10px;
+		margin: 0 auto 10px;
 		img{
 			display: block;
 		}
@@ -145,5 +150,8 @@
 				}
 			}
 		}
+	}
+	@include r(480){
+		margin: 0;
 	}
 }
