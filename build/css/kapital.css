@@ -12,8 +12,6 @@
 /* Document
    ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap");
-
 html {
   font-family: sans-serif;
   /* 1 */
@@ -927,7 +925,7 @@ body.lock {
 
 .nav__link {
   color: #404040;
-  display: block;
+  display: inline-block;
   padding: 4px 10px 6px;
   font-weight: 500;
   font-size: 14px;
