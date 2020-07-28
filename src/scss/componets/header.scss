@@ -68,6 +68,7 @@
 	@include r(480){
 		padding-bottom: 0;
 		&__body{
+			grid-template-columns: minmax(60px,auto) 150px minmax(60px,auto);
 			grid-row-gap: 10px;
 		}
 		&__search{
@@ -77,5 +78,8 @@
 		&__nav{
 			padding: 0 20px;
 		}
+	}
+	@include r(424){
+
 	}
 }
