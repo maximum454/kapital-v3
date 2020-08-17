@@ -544,6 +544,17 @@ template {
 	font-style: normal;
 }*/
 
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
 /* Slider */
 
 .slick-slider {
@@ -2542,6 +2553,60 @@ body.lock {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .article {
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  .article__subtitle {
+    margin: 20px 0;
+  }
+
+  .article__blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .article__img {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .article__img img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .article__img figcaption {
+    padding: 0 20px;
+    color: #777777;
+  }
+
+  .article__img figcaption p {
+    margin: 0 0 5px;
+    line-height: 1.2;
+  }
+
+  .article__img figcaption b {
+    color: #404040;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 767px) {
+  .article__img figcaption {
+    font-size: calc(9px + 5.1 * ((100vw - 320px) / 1360));
+  }
+
+  .article__img figcaption b {
+    font-size: calc(11px + 5.1 * ((100vw - 320px) / 1360));
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .header__body {
     grid-template-areas: 'find logo nav' 'currency currency currency';
@@ -2631,20 +2696,6 @@ body.lock {
 
   .digest-aside__anons:before {
     left: -50px;
-  }
-
-  .article {
-    padding: 20px;
-    margin: 3px 0;
-  }
-
-  .article__subtitle {
-    margin: 20px 0;
-  }
-
-  .article__blockquote {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -2740,7 +2791,7 @@ body.lock {
   }
 
   .ad-container {
-    margin: 0;
+    margin: 10px 0;
   }
 
   .header {
@@ -2806,6 +2857,16 @@ body.lock {
     border-left: 3px solid #00B25D;
     margin-top: 0;
     padding: 0 20px 0 6px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 767px) {
+  .article__img figcaption {
+    font-size: calc(9px + 3 * (100vw / 1360));
+  }
+
+  .article__img figcaption b {
+    font-size: calc(11px + 3 * (100vw / 1360));
   }
 }
 

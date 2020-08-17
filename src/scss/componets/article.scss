@@ -98,15 +98,40 @@
 		color: #777777;
 		font-size: 11px;
 	}
-	@include r(767){
+	@include r(768){
 		padding: 20px;
-		margin: 3px 0;
+		margin: 10px 0;
 		&__subtitle{
 			margin: 20px 0;
 		}
 		&__blockquote{
 			margin-left: 0;
 			margin-right: 0;
+		}
+		&__img{
+			width: calc(100% + 40px);
+			margin-left: -20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			img{
+				max-width: 100%;
+				display: block;
+				margin-bottom: 10px;
+				height: auto;
+			}
+			figcaption{
+				padding: 0 20px;
+				color: #777777;
+				@include adaptive-font(12,9);
+				p{
+					margin: 0 0 5px;
+					line-height: 1.2;
+				}
+				b{
+					color: #404040;
+					@include adaptive-font(14,11);
+				}
+			}
 		}
 	}
 }
