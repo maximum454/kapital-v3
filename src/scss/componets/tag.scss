@@ -1,0 +1,14 @@
+.tag{
+	padding: 5px 0;
+	margin: 11px 0 20px;
+	&__link{
+		display: inline-block;
+		color: #404040;
+		font-size: 13px;
+		font-weight: 600;
+		background-color: #F2F2F2;
+		text-decoration: none;
+		padding: 4px;
+		margin-bottom: 4px;
+	}
+}

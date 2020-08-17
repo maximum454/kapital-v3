@@ -3,6 +3,10 @@
 	grid-template-areas: "aside-left contant aside-right";
 	grid-template-columns: 320px minmax(340px,640px) 320px;
 	grid-column-gap: 10px;
+	&--article{
+		grid-template-areas: "contant aside-right";
+		grid-template-columns: minmax(320px, 970px)  320px;
+	}
 
 	&__aside-left{
 		grid-area: aside-left;
@@ -16,9 +20,16 @@
 	@include r(1000){
 		grid-template-areas: "aside-left contant" 'aside-right contant';
 		grid-template-columns: 320px minmax(340px,640px);
+		&--article{
+			grid-template-areas: "contant aside-right";
+			grid-template-columns: minmax(340px,640px)  320px;
+		}
 	}
 	@include r(767){
 		grid-template-areas: 'contant' 'aside-left ' 'aside-right';
 		grid-template-columns: 1fr;
+		&--article{
+			grid-template-areas: "contant" "aside-right";
+		}
 	}
 }
