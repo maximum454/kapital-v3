@@ -2522,15 +2522,19 @@ body.lock {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) {
   .main {
-    grid-template-areas: "aside-left contant" 'aside-right contant';
-    grid-template-columns: 320px minmax(340px, 640px);
+    grid-template-areas: "aside-right contant";
+    grid-template-columns: 320px minmax(340px, 1fr);
   }
 
   .main--article {
     grid-template-areas: "contant aside-right";
     grid-template-columns: minmax(340px, 640px) 320px;
+  }
+
+  .main__aside-left {
+    display: none;
   }
 }
 
@@ -2682,7 +2686,7 @@ body.lock {
   }
 
   .main {
-    grid-template-areas: 'contant' 'aside-left ' 'aside-right';
+    grid-template-areas: 'contant' 'aside-right';
     grid-template-columns: 1fr;
   }
 
