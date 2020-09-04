@@ -1,0 +1,24 @@
+.breadcrumb{
+	&__link{
+		color: #404040;
+		font-size: 22px;
+		font-family: "Montserrat", sans-serif;
+		text-decoration: none;
+		font-weight: 400;
+		display: inline-block;
+	}
+	&__icon{
+		display: inline-block;
+		position: relative;
+		color: #404040;
+		font-size: 22px;
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		text-decoration: none;
+		font-weight: 400;
+		&:before{
+			content: '→';
+			display: inline-block;
+		}
+	}
+}

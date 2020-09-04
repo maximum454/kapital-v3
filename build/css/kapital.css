@@ -1240,6 +1240,12 @@ body.lock {
   grid-area: aside-right;
 }
 
+.main__page {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 20px 40px;
+}
+
 .quote-day {
   padding: 21px 20px;
   background-color: #ffffff;
@@ -2319,8 +2325,6 @@ body.lock {
 
 .article {
   background-color: #ffffff;
-  margin: 10px 0;
-  padding: 20px 40px;
 }
 
 .article__title {
@@ -2354,11 +2358,6 @@ body.lock {
 
 .article__body p a:hover {
   text-decoration: underline;
-}
-
-.article__rubric {
-  color: #404040;
-  font-weight: bold;
 }
 
 .article__info {
@@ -2430,6 +2429,78 @@ body.lock {
   font-size: 11px;
 }
 
+.contact p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.contact__title {
+  font-size: 42px;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact__link {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.contact__link:hover {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  color: #00B25D;
+}
+
+.contact__link.under {
+  text-decoration: underline;
+}
+
+.contact__map {
+  width: calc(100% + 80px);
+  margin-left: -40px;
+}
+
+.contact__map p {
+  margin: 0 0 5px 40px;
+  font-size: 14px;
+  color: #777777;
+}
+
+.contact__map p b {
+  color: #404040;
+}
+
+.breadcrumb__link {
+  color: #404040;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.breadcrumb__icon {
+  display: inline-block;
+  position: relative;
+  color: #404040;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.breadcrumb__icon:before {
+  content: '→';
+  display: inline-block;
+}
+
 @media (min-width: 767px) {
   .currency__name {
     font-size: calc(9px + 2 * (100vw / 1360));
@@ -2469,10 +2540,6 @@ body.lock {
 
   .article__body p {
     font-size: calc(13px + 3 * (100vw / 1360));
-  }
-
-  .article__rubric {
-    font-size: calc(16px + 6 * (100vw / 1360));
   }
 
   .article__img figcaption {
@@ -2742,10 +2809,6 @@ body.lock {
 
   .article__body p {
     font-size: calc(13px + 5.1 * ((100vw - 320px) / 1360));
-  }
-
-  .article__rubric {
-    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1360));
   }
 
   .article__img figcaption {

@@ -17,6 +17,11 @@
 	&__aside-right{
 		grid-area: aside-right;
 	}
+	&__page{
+		background-color: #ffffff;
+		margin: 10px 0;
+		padding: 20px 40px;
+	}
 	@include r(1023){
 		grid-template-areas: "aside-right contant";
 		grid-template-columns: 320px minmax(340px,1fr);

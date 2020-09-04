@@ -1,7 +1,5 @@
 .article{
 	background-color: #ffffff;
-	margin: 10px 0;
-	padding: 20px 40px;
 	&__title{
 		color: #000;
 		@include adaptive-font(42,24);
@@ -34,11 +32,6 @@
 				}
 			}
 		}
-	}
-	&__rubric{
-		color: #404040;
-		@include adaptive-font(22,16);
-		font-weight: bold;
 	}
 	&__info{
 		font-size: 12px;
