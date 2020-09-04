@@ -21,6 +21,12 @@
 		background-color: #ffffff;
 		margin: 10px 0;
 		padding: 20px 40px;
+		p{
+			font-size: 16px;
+			line-height: 24px;
+			font-family: "Montserrat", sans-serif;
+			margin-bottom: 20px;
+		}
 	}
 	@include r(1023){
 		grid-template-areas: "aside-right contant";

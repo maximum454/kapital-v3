@@ -1246,6 +1246,13 @@ body.lock {
   padding: 20px 40px;
 }
 
+.main__page p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
 .quote-day {
   padding: 21px 20px;
   background-color: #ffffff;
@@ -2427,12 +2434,6 @@ body.lock {
 .article__copyright {
   color: #777777;
   font-size: 11px;
-}
-
-.contact p {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 20px;
 }
 
 .contact__title {
