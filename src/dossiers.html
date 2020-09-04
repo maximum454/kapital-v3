@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Досье</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/kapital.min.css">
+</head>
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html')
+    <div class="container">
+        <main class="main main--article">
+            <main class="main__contant">
+                <div class="main__page">
+                    <div class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+                        <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumb__link" href="/" itemprop="item"><span
+                                    itemprop="name">Главная</span></a>
+                            <meta itemprop="position" content="1">
+                            <i class="breadcrumb__icon"></i>
+                        </span>
+
+                        <span itemprop="item">
+                            <span class="breadcrumb__link first-letter" itemprop="name"><b>Досье</b></span>
+                        </span>
+                    </div>
+
+                    <div class="dossiers">
+                        <h1>Досье редакции</h1>
+                        <form class="search-header" method="get" action="/search">
+                            <input class="search-header__input" id="search-input" type="text" name="q" placeholder="Поиск">
+                            <button class="search-header__btn" type="submit" title="Найти новости" id="search-btn"></button>
+                        </form>
+
+                        <ul class="pagination">
+                            <li><a href="#">←</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">→</a></li>
+                        </ul>
+                        
+                        <div class="dossiers__row">
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                            <a class="dossiers__item" href="#">
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </a>
+                        </div>
+
+                        <ul class="pagination">
+                            <li><a href="#">←</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">→</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </main>
+
+            <aside class="main__aside-right">
+
+                <div class="popular-aside">
+                    <a class="popular-aside__title first-letter" href="#">Популярные материалы</a>
+                    <div class="popular-aside__filter">
+                        <button data-filterby="day" class="popular-aside__widget">За сутки</button>
+                        <button data-filterby="week" class="popular-aside__widget popular-aside__widget--selected">За
+                            неделю
+                        </button>
+                        <button data-filterby="month" class="popular-aside__widget">За месяц</button>
+                    </div>
+                    <div class="js-popular-aside" id="js-popular-aside-day">
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Обновленный Tiguan, новые электромобили Audi и
+                                    Porsche
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Halyk Arena в Алматы оборудовали под временный
+                                    стационар
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Илон Маск обогнал Уоррена Баффетта в списке богатейших
+                                    людей
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Производство аппаратов ИВЛ увеличат</div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Пандемия стоила компаниям Европы $100 млрд потерянной
+                                    выручки
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="js-popular-aside" id="js-popular-aside-week">
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Обновленный Tiguan, новые электромобили Audi и
+                                    Porsche
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Halyk Arena в Алматы оборудовали под временный
+                                    стационар
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Илон Маск обогнал Уоррена Баффетта в списке богатейших
+                                    людей
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Производство аппаратов ИВЛ увеличат</div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Пандемия стоила компаниям Европы $100 млрд потерянной
+                                    выручки
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="js-popular-aside" id="js-popular-aside-month">
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Обновленный Tiguan, новые электромобили Audi и
+                                    Porsche
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Halyk Arena в Алматы оборудовали под временный
+                                    стационар
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Илон Маск обогнал Уоррена Баффетта в списке богатейших
+                                    людей
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Производство аппаратов ИВЛ увеличат</div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-aside__item">
+                            <div class="popular-aside__img">
+                                <img width="91" height="60" src="img/popular-img.jpg" alt="">
+                            </div>
+                            <div class="popular-aside__txt">
+                                <div class="popular-aside__info information-article">
+                                    <time class="information-article__date" datetime="16.04.2017">16.04.2017</time>
+                                    <div class="information-article__count">267</div>
+                                </div>
+                                <div class="popular-aside__name">Пандемия стоила компаниям Европы $100 млрд потерянной
+                                    выручки
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ad-container">
+                    <img src="img/Advertising-320x100.jpg" alt="">
+                </div>
+
+                <div class="editors-aside">
+                    <a class="editors-aside__title first-letter" href="#">Выбор редакции</a>
+                    <div class="editors-aside__body js-editors-slider">
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="editors-aside__contant">
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Чайные церемонии – новый атрибут в
+                                            проведении успешных переговоров в бизнесе</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">KAPLAN, LEE & PARTNERS: Синергия
+                                            профессионалов для серьезных задач</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="editors-aside__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Алматинский ушуист основал бойцовский
+                                            клуб с
+                                            доходом в 2 млн тенге</a>
+                                    </div>
+                                </div>
+                                <div class="editors-aside__item">
+                                    <div class="editors-aside__img">
+                                        <img width="130" height="83" src="img/persons.png" alt="">
+                                    </div>
+                                    <div class="editors-aside__txt">
+                                        <div class="main-news__info information-article">
+                                            <a class="information-article__category" href="#">Государвство</a>
+                                            <time class="information-article__date" datetime="16.04.2017">16.04.2017
+                                            </time>
+                                            <div class="information-article__count">267</div>
+                                        </div>
+                                        <a class="editors-aside__name" href="#">Канада откажется от использования
+                                            одноразовых пластиковых изделий к 2021 году</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </main>
+    </div>
+    @@include('template/_footer.html')
+</div>
+
+
+<script src="js/kapital.min.js"></script>
+</body>
+</html>

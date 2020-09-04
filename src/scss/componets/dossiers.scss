@@ -1,0 +1,48 @@
+.dossiers{
+	&__row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item{
+		flex: 1 0 0;
+		padding: 20px;
+		display: block;
+		min-width: 224px;
+		text-decoration: none;
+		color: #000;
+		font-size: 16px;
+		@include adaptive-font(16,13);
+		border-right: 1px solid #DDDDDD;
+		border-bottom: 1px solid #DDDDDD;
+		&:nth-child(3n){
+			border-right: 0;
+		}
+		&:nth-last-child(-n+3){
+			border-bottom: none;
+		}
+	}
+	@include r(1111){
+		&__item{
+			min-width: 168px;
+		}
+	}
+	@include r(980){
+		&__item{
+			min-width: 140px;
+		}
+	}
+	@include r(767){
+		&__item{
+			min-width: 165px;
+		}
+	}
+	@include r(605){
+		&__row{
+			width: calc(100% + 80px);
+			margin-left: -40px;
+		}
+		&__item{
+			min-width: 150px;
+		}
+	}
+}
