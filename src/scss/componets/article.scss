@@ -2,7 +2,6 @@
 	background-color: #ffffff;
 	&__title{
 		color: #000;
-		@include adaptive-font(42,24);
 		line-height: 1.1;
 		margin: 18px 0;
 	}
@@ -87,12 +86,7 @@
 			height: 2px;
 		}
 	}
-	&__copyright{
-		color: #777777;
-		font-size: 11px;
-	}
-	@include r(768){
-		padding: 20px;
+	@include r(767){
 		margin: 10px 0;
 		&__subtitle{
 			margin: 20px 0;

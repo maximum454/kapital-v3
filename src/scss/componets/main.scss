@@ -24,13 +24,7 @@
 		h1{
 			font-size: 42px;
 			font-weight: bold;
-			@include adaptive-font(42,32);
-		}
-		p{
-			font-size: 16px;
-			line-height: 24px;
-			font-family: "Montserrat", sans-serif;
-			margin-bottom: 20px;
+			@include adaptive-font(42,24);
 		}
 	}
 	@include r(1023){

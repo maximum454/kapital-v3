@@ -55,6 +55,11 @@ h2{
 		border-top: 3px solid #00B25D;
 	}
 }
+.copy-warning{
+	font-size: 11px;
+	line-height: 14px;
+	color: #777;
+}
 
 //Шапка
 @import "componets/header";
@@ -133,3 +138,6 @@ h2{
 
 //Страница Спецпроектов
 @import "componets/special";
+
+//Страница Пользовательское соглашение
+@import "componets/agreement";
