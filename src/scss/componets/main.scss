@@ -5,7 +5,7 @@
 	grid-column-gap: 10px;
 	&--article{
 		grid-template-areas: "contant aside-right";
-		grid-template-columns: minmax(320px, 970px)  320px;
+		grid-template-columns: minmax(280px, 970px)  320px;
 	}
 
 	&__aside-left{
@@ -24,6 +24,7 @@
 		h1{
 			font-size: 42px;
 			font-weight: bold;
+			@include adaptive-font(42,32);
 		}
 		p{
 			font-size: 16px;
@@ -49,5 +50,9 @@
 		&--article{
 			grid-template-areas: "contant" "aside-right";
 		}
+		&__page{
+			padding: 20px;
+		}
+
 	}
 }

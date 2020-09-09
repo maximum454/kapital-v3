@@ -1,0 +1,70 @@
+.special {
+	&__item {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding: 20px 0;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -40px;
+			width: calc(100% + 80px);
+			height: 1px;
+			background-color: rgba(#777777, .15);
+		}
+	}
+
+	&__img {
+		display: block;
+		text-decoration: none;
+		margin: 0 0 5px;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__info {
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+
+	.information-article__count {
+		font-size: 12px;
+		background-size: 19px;
+		padding-left: 19px;
+	}
+
+	&__name {
+		color: #404040;
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0 0 5px;
+	}
+
+	&__copyright {
+		padding-top: 10px;
+		color: #777777;
+		font-size: 11px;
+	}
+
+	p {
+		color: #404040;
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	@include r(767) {
+		&__item {
+			&:after {
+				left: -20px;
+				width: calc(100% + 40px);
+			}
+		}
+	}
+}

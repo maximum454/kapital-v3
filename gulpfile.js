@@ -63,7 +63,6 @@ function browserSync(params) {
 function html(){
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
@@ -82,12 +81,6 @@ function css(){
             autoprefixer({
                 overrideBrowserslist: ['last 5 versions'],
                 cascade: true
-            })
-        )
-        .pipe(
-            webpcss({
-                webpClass: '.webp',
-                noWebpClass: '.no-webp'
             })
         )
         .pipe(dest(path.build.css))
@@ -120,13 +113,6 @@ function js(){
 
 function images(){
     return src(path.src.img)
-        .pipe(
-            webp({
-                quality: 70
-            })
-        )
-        .pipe(dest(path.build.img))
-        .pipe(src(path.src.img))
         .pipe(
             imagemin({
                 interlaced: true,

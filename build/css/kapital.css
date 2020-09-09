@@ -1225,7 +1225,7 @@ body.lock {
 
 .main--article {
   grid-template-areas: "contant aside-right";
-  grid-template-columns: minmax(320px, 970px) 320px;
+  grid-template-columns: minmax(280px, 970px) 320px;
 }
 
 .main__aside-left {
@@ -2195,14 +2195,12 @@ body.lock {
   margin: 0 auto;
 }
 
-.no-webp .newspaper-aside__img:after{
-  background-image: url("../img/newspaper-pdf.png"); }
-
 .newspaper-aside__img:after {
   content: '';
   position: absolute;
   top: 20px;
   right: 0;
+  background-image: url("../img/newspaper-pdf.png");
   background-repeat: no-repeat;
   background-position: center right;
   z-index: 1;
@@ -2577,6 +2575,66 @@ body.lock {
   border-bottom: none;
 }
 
+.special__item {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  padding: 20px 0;
+}
+
+.special__item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: calc(100% + 80px);
+  height: 1px;
+  background-color: rgba(119, 119, 119, 0.15);
+}
+
+.special__img {
+  display: block;
+  text-decoration: none;
+  margin: 0 0 5px;
+}
+
+.special__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.special__info {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.special .information-article__count {
+  font-size: 12px;
+  background-size: 19px;
+  padding-left: 19px;
+}
+
+.special__name {
+  color: #404040;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.special__copyright {
+  padding-top: 10px;
+  color: #777777;
+  font-size: 11px;
+}
+
+.special p {
+  color: #404040;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (min-width: 767px) {
   .currency__name {
     font-size: calc(9px + 2 * (100vw / 1360));
@@ -2584,6 +2642,10 @@ body.lock {
 
   .currency__price {
     font-size: calc(10px + 2 * (100vw / 1360));
+  }
+
+  .main__page h1 {
+    font-size: calc(32px + 10 * (100vw / 1360));
   }
 
   .footer__menu .link {
@@ -2853,6 +2915,10 @@ body.lock {
     grid-template-areas: "contant" "aside-right";
   }
 
+  .main__page {
+    padding: 20px;
+  }
+
   .digest-aside__txt {
     margin-bottom: 30px;
   }
@@ -2864,6 +2930,11 @@ body.lock {
   .dossiers__item {
     min-width: 165px;
   }
+
+  .special__item:after {
+    left: -20px;
+    width: calc(100% + 40px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -2873,6 +2944,10 @@ body.lock {
 
   .currency__price {
     font-size: calc(10px + 3.4 * ((100vw - 320px) / 1360));
+  }
+
+  .main__page h1 {
+    font-size: calc(32px + 17 * ((100vw - 320px) / 1360));
   }
 
   .footer__menu .link {
@@ -3047,5 +3122,3 @@ body.lock {
     font-size: calc(11px + 3 * (100vw / 1360));
   }
 }
-
-.webp .newspaper-aside__img:after{ background-image: url(../img/newspaper-pdf.webp); }
