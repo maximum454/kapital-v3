@@ -21,6 +21,25 @@
 			border-bottom: none;
 		}
 	}
+	&__dictionary{
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 20px 0;
+		a{
+			color: #000000;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 30px;
+			text-decoration: none;
+			padding: 2px;
+			&.active,&:hover{
+				color: #00B25D;
+				text-decoration: none;
+			}
+		}
+	}
 	@include r(1111){
 		&__item{
 			min-width: 168px;
@@ -29,13 +48,16 @@
 	@include r(980){
 		&__item{
 			min-width: 140px;
-
+		}
+		&__dictionary{
+			justify-content: flex-start;
 		}
 	}
 	@include r(859){
 		&__item{
 			min-width: 160px;
 		}
+
 	}
 	@include r(767){
 		&__item{

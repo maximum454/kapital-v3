@@ -1481,7 +1481,7 @@ body.lock {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 84px;
-  height: 37px;
+  height: 40px;
 }
 
 .currency__body {
@@ -2974,6 +2974,35 @@ body.lock {
   border-bottom: none;
 }
 
+.dossiers__dictionary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.dossiers__dictionary a {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.dossiers__dictionary a.active,
+.dossiers__dictionary a:hover {
+  color: #00B25D;
+  text-decoration: none;
+}
+
 .dossiers-detail h1 {
   margin: 0;
 }
@@ -3168,6 +3197,10 @@ body.lock {
 }
 
 @media only screen and (max-width: 1024px) {
+  .currency__graf {
+    display: none;
+  }
+
   .currency__body {
     width: 100%;
     display: grid;
@@ -3215,6 +3248,12 @@ body.lock {
   .dossiers__item {
     min-width: 140px;
   }
+
+  .dossiers__dictionary {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media only screen and (max-width: 940px) {
@@ -3244,7 +3283,7 @@ body.lock {
 
 @media only screen and (max-width: 767px) {
   .header__body {
-    grid-template-areas: 'find logo nav' 'currency currency currency';
+    grid-template-areas: 'currency currency currency' 'find logo nav';
     grid-template-columns: minmax(120px, 438px) minmax(150px, 250px) minmax(120px, 438px);
     grid-row-gap: 20px;
   }
@@ -3535,7 +3574,6 @@ body.lock {
   }
 
   .currency {
-    background-color: #404040;
     padding: 5px 10px;
   }
 
@@ -3548,17 +3586,8 @@ body.lock {
     display: none;
   }
 
-  .currency__name {
-    color: #ffffff;
-  }
-
-  .currency__price {
-    color: #ffffff;
-  }
-
   .currency__arrow {
     border-color: #777777;
-    background-image: url("../img/currency-arrow-light.svg");
   }
 
   .special-slider {
