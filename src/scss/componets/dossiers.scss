@@ -29,20 +29,31 @@
 	@include r(980){
 		&__item{
 			min-width: 140px;
+
+		}
+	}
+	@include r(859){
+		&__item{
+			min-width: 160px;
 		}
 	}
 	@include r(767){
 		&__item{
-			min-width: 165px;
+			min-width: 172px;
 		}
 	}
-	@include r(605){
+	@include r(606){
 		&__row{
-			width: calc(100% + 80px);
-			margin-left: -40px;
+			width: calc(100% + 40px);
+			margin-left: -20px;
 		}
 		&__item{
 			min-width: 150px;
+		}
+	}
+	@include r(449){
+		&__item{
+			min-width: 130px;
 		}
 	}
 }

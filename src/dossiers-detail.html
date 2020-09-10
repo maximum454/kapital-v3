@@ -1,36 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="description" content="➲ Актуальные казахстанские и мировые новости на деловом портале Kapital.kz. Все самые главные новости Казахстана и мира в сфере экономики, финансов, бизнеса. ">
-<meta name="keywords" content="">
-<meta name="author" content="Максим Карачёв">
-<!-- Twitter Card data -->
-<meta name="twitter:site" content="Деловой портал Капитал.кз">
-<meta name="twitter:title" content="Деловой портал Капитал.кз">
-<meta name="twitter:description" content="Деловой портал Kapital.kz - последние новости Казахстана и мира в сфере экономики, бизнеса, финансов
-                  и высоких технологий в РК и за рубежом. А также информация по кадровым перестановкам, опросы, блоги
-                  экспертов на деловом портале Казахстана капитал.кз">
-<meta name="twitter:image" content="">
-
-<!-- Open Graph data -->
-<meta property="og:title" content="Деловой портал Капитал.кз">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://kapital.kz">
-<meta property="og:image" content="">
-<meta property="og:description" content="Деловой портал Kapital.kz - последние новости Казахстана и мира в сфере экономики, бизнеса, финансов
-                  и высоких технологий в РК и за рубежом. А также информация по кадровым перестановкам, опросы, блоги
-                  экспертов на деловом портале Казахстана капитал.кз">
-<meta property="og:site_name" content="Деловой портал Капитал.кз">
-<meta property="og:locale" content="ru_RU">
-
-<meta name="apple-mobile-web-app-title" content="Karachyov Maxim">
-<meta name="application-name" content="Karachyov Maxim">
-
+    @@include('./template/_meta.html')
     <title>Досье</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
@@ -39,91 +10,7 @@
 <body>
 <div class="wrp">
 
-    <header class="header">
-    <div class="container">
-        <div class="header__body">
-
-            <div class="header__currency currency">
-                <div class="currency__graf"></div>
-                <div class="currency__body">
-                    <div class="currency__item">
-                        <div class="currency__name">Usd</div>
-                        <div class="currency__price">378.93₸</div>
-                        <div class="currency__count up">+1.05</div>
-                    </div>
-                    <div class="currency__item">
-                        <div class="currency__name">Eur</div>
-                        <div class="currency__price">421.00₸</div>
-                        <div class="currency__count up">+0.23</div>
-                    </div>
-                    <div class="currency__item">
-                        <div class="currency__name">Rub</div>
-                        <div class="currency__price">5.63₸</div>
-                        <div class="currency__count up">+0.05</div>
-                    </div>
-                    <div class="currency__item">
-                        <div class="currency__name">BRENT</div>
-                        <div class="currency__price">$72.16</div>
-                        <div class="currency__count up">-0.33</div>
-                    </div>
-                    <div class="currency__item">
-                        <div class="currency__name">BTC</div>
-                        <div class="currency__price">$7549.25</div>
-                        <div class="currency__count up">-100.65</div>
-                    </div>
-                </div>
-                <a href="#" class="currency__arrow"></a>
-            </div>
-            <a class="header__logo" href="#">
-                <img src="img/logo.svg" width="287" height="76" alt="Новости Казахстана - Капитал.кз">
-            </a>
-            <div class="header__find">
-                <form class="header__search search-header" method="get" action="/search">
-                <input class="search-header__input" id="search-input" type="text" name="q" placeholder="Поиск">
-                <button class="search-header__btn" type="submit" title="Найти новости" id="search-btn"></button>
-            </form>
-                <div class="header__social social-header">
-                <div class="social-header__title">Всегда на связи</div>
-                <div class="social-header__body">
-
-                    <a href="https://www.facebook.com/kapital.kz/" class="social-header__link facebook"></a>
-
-                    <a href="https://twitter.com/Kapitalkz" class="social-header__link twitter"></a>
-
-                    <a href="https://t.me/kapitalkz" class="social-header__link telegram"></a>
-
-                    <a href="https://www.instagram.com/kapital.kz/" class="social-header__link instagram"></a>
-
-                    <a href="https://vk.com/kapitalkz" class="social-header__link vkontakte"></a>
-
-                </div>
-            </div>
-            </div>
-
-            <div class="header__nav nav">
-                <div class="nav__wrapper">
-                    <ul class="nav__menu">
-                        <li class="nav__item"><a class="nav__link" href="#">Лента новостей</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Экономика</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Финансы</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Государство</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Мир</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Персоны</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Бизнес</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Назначения</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Досье</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Недвижимость</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Технологии</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Lifestyle</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Спецпроекты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-
+    @@include('./template/_header.html')
     <div class="container">
         <main class="main main--article">
             <main class="main__contant">
@@ -142,113 +29,47 @@
                         </span>
                     </div>
 
-                    <div class="dossiers">
-                        <h1>Досье редакции</h1>
-                        <form class="search-header" method="get" action="/search">
-                            <input class="search-header__input" id="search-input" type="text" name="q" placeholder="Поиск">
-                            <button class="search-header__btn" type="submit" title="Найти новости" id="search-btn"></button>
-                        </form>
+                    <div class="dossiers-detail">
+                        <p class="dossiers-detail__relevant">Информация актуальна на 04.05.2020</p>
+                        <div class="dossiers-detail__photo">
+                            <div class="dossiers-detail__img">
+                                <img src="img/dosser-img.png" width="105" height="140" alt="">
+                            </div>
+                            <h1>
+                                <div>Абаев</div>
+                                <div>Даурен</div>
+                                <div>Аскербекович</div>
+                            </h1>
+                        </div>
+                        <div class="dossiers-detail__info">
+                            <h3>Дата рождения</h3>
+                            <p>18 апреля 1979 года</p>
 
-                        <ul class="pagination">
-                            <li><a href="#">←</a></li>
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">→</a></li>
-                        </ul>
-                        
-                        <div class="dossiers__row">
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
+                            <h3>Занимаемая должность</h3>
+                            <p>Первый заместитель руководителя Администрации Президента</p>
 
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
-                            <a class="dossiers__item" href="#">
-                                <div>Абаев</div>
-                                <div>Даурен</div>
-                                <div>Аскербекович</div>
-                            </a>
+                            <h3>Место работы</h3>
+                            <p>Администрация Президента</p>
                         </div>
 
-                        <ul class="pagination">
-                            <li><a href="#">←</a></li>
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">→</a></li>
-                        </ul>
-                        <p class="copy-warning">При работе с материалами Центра деловой информации Kapital.kz                        разрешено использование лишь 30% текста с обязательной гиперссылкой на источник. При                        использовании полного материала необходимо разрешение редакции.</p>
+                        <h2 class="first-letter">Образование</h2>
+                        <p>В 2001 году окончил Казахский национальный университет имени аль-Фараби, Лейденский
+                            университет (2006). Владеет казахским, русским, английским языками.</p>
+
+                        <h2 class="first-letter">Биография</h2>
+                        <p><b>С&nbsp;2001 по&nbsp;2003 годы&nbsp;&mdash;</b> референт, атташе, третий секретарь министерства иностранных дел Республики Казахстан;</p>
+                        <p><b>В&nbsp;2003 году&nbsp;&mdash;</b> третий секретарь посольства Республики Казахстан в&nbsp;Азербайджане;</p>
+                        <p><b>С&nbsp;2003 по&nbsp;2007 годы&nbsp;&mdash;</b> второй секретарь, временный поверенный в&nbsp;делах Республики Казахстан в&nbsp;Нидерландах;</p>
+                        <p><b>В&nbsp;2007 году&nbsp;&mdash;</b> начальник отдела <nobr>пресс-службы</nobr> министерства иностранных дел Республики Казахстан;</p>
+                        <p><b>С&nbsp;2007 по&nbsp;2008 годы&nbsp;&mdash;</b> эксперт, консультант протокола президента Республики Казахстан;</p>
+                        <p><b>С&nbsp;2008 по&nbsp;2009 годы&nbsp;&mdash;</b> заместитель <nobr>пресс-секретаря</nobr> президента Республики Казахстан;</p>
+                        <p><b>С&nbsp;2009 по&nbsp;2011 годы&nbsp;&mdash;</b> государственный инспектор администрации президента Республики Казахстан;</p>
+                        <p><b>С&nbsp;2011 года&nbsp;&mdash;</b> <nobr>пресс-секретарь</nobr> президента Республики Казахстан;</p>
+                        <p><b>В&nbsp;июле 2013 года</b> назначен советником президента Республики Казахстан;</p>
+                        <p><b>С&nbsp;2016 по&nbsp;2019 годы&nbsp;&mdash;</b> министр информации и&nbsp;коммуникаций РК.</p>
+                        <p><b>С&nbsp;2019 по&nbsp;2020 годы&nbsp;&mdash;</b> министр информации и&nbsp;общественного развития РК.</p>
+                        <p><b>С&nbsp;мая 2020 года&nbsp;&mdash;</b> первый заместитель Руководителя Администрации Президента.</p>
+                        <p>Соавтор книги &laquo;Государственный протокол Республики Казахстан&raquo; (2010)</p>
                     </div>
 
                 </div>
@@ -945,45 +766,7 @@
             </aside>
         </main>
     </div>
-    <footer class="footer">
-    <div class="container">
-        <div class="footer__body">
-
-            <a class="footer__logo" href="/">
-                <img src="img/logo-light.svg" width="184" height="49" alt="Новости Казахстана - Капитал.кз">
-            </a>
-            <ul class="footer__menu">
-                <li><a class="link" href="#">Пользовательское соглашение</a></li>
-                <li><a class="link" href="#">Контакты</a></li>
-                <li><a class="link" href="#">Размещение рекламы</a></li>
-                <li><a class="link" href="#">Редакция</a></li>
-            </ul>
-            <div class="footer__informers">
-                <div>
-                    <img src="img/zero.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/yandex.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="footer__copyrights">Центр деловой информации Kapital.kz — информационное агентство,
-                информирующее о
-                событиях в экономике, бизнесе и финансах в Казахстане и за рубежом. При работе с материалами Центра
-                деловой
-                информации Kapital.kz разрешено использование лишь 30% текста с обязательной гиперссылкой на источник.
-                При
-                использовании полного материала необходимо разрешение редакции. Редакция Kapital.kz не всегда разделяет
-                мнения авторов статей. При нарушении условий размещения материалов редакция делового портала имеет право
-                на
-                решение спорных моментов в законодательном порядке
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
+    @@include('template/_footer.html')
 </div>
 
 

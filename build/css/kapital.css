@@ -2568,6 +2568,56 @@ body.lock {
   border-bottom: none;
 }
 
+.dossiers-detail h1 {
+  margin: 0;
+}
+
+.dossiers-detail h2 {
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+.dossiers-detail h3 {
+  color: #000000;
+  font-size: 18px;
+  margin: 0;
+}
+
+.dossiers-detail p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+
+.dossiers-detail__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.dossiers-detail__img {
+  margin-right: 20px;
+}
+
+.dossiers-detail__img img {
+  height: auto;
+}
+
+.dossiers-detail__info {
+  margin-bottom: 20px;
+}
+
+.dossiers-detail__relevant {
+  font-size: 11px;
+  line-height: 14px;
+  color: #777777;
+}
+
 .special__item {
   display: block;
   text-decoration: none;
@@ -2689,6 +2739,10 @@ body.lock {
   .dossiers__item {
     font-size: calc(13px + 3 * (100vw / 1360));
   }
+
+  .dossiers-detail h1 {
+    font-size: calc(32px + 10 * (100vw / 1360));
+  }
 }
 
 @media only screen and (max-width: 1111px) {
@@ -2769,6 +2823,12 @@ body.lock {
   .footer__body {
     grid-template-columns: minmax(117px, 184px) 1fr;
     grid-template-areas: 'logo informers' 'menu menu' 'copyrights copyrights';
+  }
+}
+
+@media only screen and (max-width: 859px) {
+  .dossiers__item {
+    min-width: 160px;
   }
 }
 
@@ -2918,7 +2978,7 @@ body.lock {
   }
 
   .dossiers__item {
-    min-width: 165px;
+    min-width: 172px;
   }
 
   .special__item:after {
@@ -2983,6 +3043,10 @@ body.lock {
   .dossiers__item {
     font-size: calc(13px + 5.1 * ((100vw - 320px) / 1360));
   }
+
+  .dossiers-detail h1 {
+    font-size: calc(32px + 17 * ((100vw - 320px) / 1360));
+  }
 }
 
 @media only screen and (max-width: 767px) and (max-width: 767px) {
@@ -2995,10 +3059,10 @@ body.lock {
   }
 }
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 606px) {
   .dossiers__row {
-    width: calc(100% + 80px);
-    margin-left: -40px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
 
   .dossiers__item {
@@ -3098,6 +3162,12 @@ body.lock {
 
   .editors-aside {
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .dossiers__item {
+    min-width: 130px;
   }
 }
 

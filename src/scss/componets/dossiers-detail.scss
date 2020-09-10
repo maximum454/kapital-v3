@@ -1,0 +1,41 @@
+.dossiers-detail{
+	h1{
+		@include adaptive-font(42,32);
+		margin: 0;
+	}
+	h2{
+		font-size: 28px;
+		margin: 30px 0;
+	}
+	h3{
+		color: #000000;
+		font-size: 18px;
+		margin: 0;
+	}
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		margin: 0 0 20px;
+	}
+	&__photo{
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #C4C4C4;
+		padding: 20px 0;
+		margin-bottom: 20px;
+	}
+	&__img{
+		margin-right: 20px;
+		img{
+			height: auto;
+		}
+	}
+	&__info{
+		margin-bottom: 20px;
+	}
+	&__relevant{
+		font-size: 11px;
+		line-height: 14px;
+		color: #777777;
+	}
+}
