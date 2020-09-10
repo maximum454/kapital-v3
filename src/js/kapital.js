@@ -3,6 +3,7 @@
 @@include('partials/priority-nav.js')
 @@include('partials/jquery.knob.js')
 @@include('partials/slick.js')
+@@include('partials/likely.js')
 
 $(function(){
     var nav = priorityNav.init({

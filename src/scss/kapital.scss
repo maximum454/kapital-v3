@@ -4,6 +4,7 @@
 //@import 'partials/bootstrap-grid';
 @import 'partials/slick';
 @import 'partials/priority-nav-core';
+@import 'partials/likely';
 
 
 *{
@@ -144,3 +145,6 @@ h2{
 
 //Страница Пользовательское соглашение
 @import "componets/agreement";
+
+//Социальные ссылки
+@import "componets/social";
