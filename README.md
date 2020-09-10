@@ -6,6 +6,24 @@
 Cтраница материалов
  https://maximum454.github.io/kapital-v3/build/article.html
  
+Cтраница Соглашение
+  https://maximum454.github.io/kapital-v3/build/agreement.html
+
+Cтраница Контактов  
+  https://maximum454.github.io/kapital-v3/build/contact.html
+
+Cтраница Досье
+  https://maximum454.github.io/kapital-v3/build/dossiers.html
+  
+Cтраница Досье детальная
+  https://maximum454.github.io/kapital-v3/build/dossiers-detail.html
+  
+Cтраница Рубрик
+  https://maximum454.github.io/kapital-v3/build/rubrica.html
+  
+Cтраница спецпроектов
+  https://maximum454.github.io/kapital-v3/build/special.html
+ 
 Верстка использует сборку Gulp
  Старт: gulp
  
