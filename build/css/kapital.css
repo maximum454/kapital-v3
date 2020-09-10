@@ -1684,6 +1684,9 @@ body.lock {
 
 .main-news {
   background-color: #ffffff;
+}
+
+.main-news.padding {
   padding: 0 40px;
 }
 

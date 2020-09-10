@@ -1,6 +1,8 @@
 .main-news{
 	background-color: #ffffff;
-	padding:0 40px;
+	&.padding{
+		padding:0 40px;
+	}
 	&.dark{
 		margin-top: 10px;
 		background-color: #404040;
