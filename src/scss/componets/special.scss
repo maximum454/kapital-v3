@@ -19,7 +19,7 @@
 	&__img {
 		display: block;
 		text-decoration: none;
-		margin: 0 0 5px;
+		margin: 0 0 10px;
 
 		img {
 			display: block;
@@ -29,7 +29,7 @@
 	}
 
 	&__info {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		font-size: 12px;
 	}
 
@@ -42,15 +42,16 @@
 	&__name {
 		color: #404040;
 		font-size: 18px;
+		line-height: 20px;
 		font-weight: bold;
-		margin: 0 0 5px;
+		margin: 0 0 10px;
 	}
 
 	.copy-warning {
 		padding-top: 10px;
 	}
 
-	p {
+	&__anons{
 		color: #404040;
 		margin: 0;
 		font-size: 14px;

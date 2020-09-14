@@ -1682,6 +1682,7 @@ body.lock {
   font-size: 42px;
   font-weight: bold;
   line-height: 45px;
+  margin: 20px 0;
 }
 
 .quote-day {
@@ -3115,7 +3116,7 @@ body.lock {
 .special__img {
   display: block;
   text-decoration: none;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
 }
 
 .special__img img {
@@ -3125,7 +3126,7 @@ body.lock {
 }
 
 .special__info {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 12px;
 }
 
@@ -3138,15 +3139,16 @@ body.lock {
 .special__name {
   color: #404040;
   font-size: 18px;
+  line-height: 20px;
   font-weight: bold;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
 }
 
 .special .copy-warning {
   padding-top: 10px;
 }
 
-.special p {
+.special__anons {
   color: #404040;
   margin: 0;
   font-size: 14px;
