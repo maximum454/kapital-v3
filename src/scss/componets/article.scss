@@ -7,10 +7,10 @@
 	}
 	&__subtitle{
 		color: #000;
-		@include adaptive-font(24,18);
-		line-height: 1.2;
+		font-size: 24px;
+		line-height: 30px;
 		letter-spacing: 0.2px;
-		font-weight: 500;
+		font-weight: 600;
 		margin: 20px 0 42px;
 	}
 	&__body{
@@ -19,8 +19,8 @@
 			line-height: 30px;
 		}
 		p{
-			@include adaptive-font(16,13);
-			line-height: 1.5;
+			font-size: 16px;
+			line-height: 24px;
 			margin: 20px 0 40px;
 			a{
 				color: #00B25D;
@@ -46,18 +46,22 @@
 			margin-bottom: 10px;
 			height: auto;
 		}
-		figcaption{
-			padding: 0 40px;
-			color: #777777;
-			@include adaptive-font(12,9);
-			p{
-				margin: 0 0 5px;
-			}
-			b{
-				color: #404040;
-				@include adaptive-font(14,11);
-			}
-		}
+
+	}
+	&__figcaption{
+		padding: 0 40px;
+	}
+	&__figcaption-title{
+		color: #404040;
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0!important;
+	}
+	&__figcaption-subtitle{
+		color: #777777;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 0!important;
 	}
 	&__blockquote{
 		@include adaptive-font(21,18);
@@ -86,6 +90,7 @@
 			height: 2px;
 		}
 	}
+
 	@include r(767){
 		margin: 10px 0;
 		&__subtitle{

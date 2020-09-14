@@ -1,6 +1,7 @@
 .dossiers-detail{
 	h1{
-		@include adaptive-font(42,32);
+		font-size: 42px;
+		line-height: 45px;
 		margin: 0;
 	}
 	h2{

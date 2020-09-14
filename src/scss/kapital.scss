@@ -18,7 +18,7 @@ body{
 	}
 }
 .wrp{
-
+	background-color: #F2F2F2;
 }
 h2{
 
@@ -45,6 +45,22 @@ h2{
 		display: block;
 		max-width: 100%;
 		height: auto;
+	}
+	&--left{
+		width: calc(100% + 40px);
+		margin: 0 0 0 -20px;
+
+		img{
+			padding: 10px 0;
+			background-color: #F2F2F2;
+		}
+	}
+	&--main{
+		margin: 0 0 10px;
+		img{
+			padding: 10px 0 0;
+			background-color: #F2F2F2;
+		}
 	}
 	@include r(480){
 		margin: 10px 0;
