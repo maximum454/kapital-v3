@@ -7,7 +7,7 @@
 	&.dark{
 		margin-top: 10px;
 		background-color: #404040;
-		border-left: 10px solid #00B25D;
+		border-color:#00B25D;
 		.main-news__title{
 			color: #FFFFFF;
 			font-size: 22px;
@@ -93,6 +93,9 @@
 	}
 	@include r(1024){
 		padding: 0 20px;
+		&.padding{
+			padding:0 20px;
+		}
 		&__item{
 			&:after{
 				content: '';
@@ -106,16 +109,33 @@
 		}
 	}
 	@include r(480){
+		&.padding{
+			padding: 0 20px 0 10px;
+		}
 		&.dark{
 			margin-top: 0;
-			padding: 0 20px 0 10px;
+			.main-news__item{
+				&:before{
+					left: -10px;
+					width: calc(100% + 30px);
+				}
+				&:after{
+					background-color: rgba(#fff,.15);
+				}
+			}
+		}
+		&__item{
+			&:after{
+				left: -10px;
+				width: calc(100% + 30px);
+			}
 		}
 	}
 	@include r(424){
+		border-width: 3px;
+		padding: 0 20px 0 6px;
 		&.dark{
-			border-left: 3px solid #00B25D;
 			margin-top: 0;
-			padding: 0 20px 0 6px;
 		}
 	}
 }
