@@ -3,7 +3,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		border-top: 1px solid #DDDDDD;
-		border-bottom: 1px solid #DDDDDD;
 	}
 	&__item{
 		flex: 1 0 0;
@@ -18,9 +17,6 @@
 		border-bottom: 1px solid #DDDDDD;
 		&:nth-child(3n){
 			border-right: 0;
-		}
-		&:nth-last-child(-n+3){
-			border-bottom: none;
 		}
 	}
 	&__dictionary{
@@ -58,12 +54,36 @@
 	@include r(859){
 		&__item{
 			min-width: 160px;
+			&:nth-child(2n){
+				border-right: none;
+			}
+			&:nth-child(3n){
+				border-right: 1px solid #DDDDDD;
+			}
+			&:nth-child(6n){
+				border-right: none;
+			}
+			&:nth-last-child(-n+1){
+				border-right: none;
+			}
 		}
 
 	}
 	@include r(767){
 		&__item{
-			min-width: 172px;
+			min-width: 174px;
+			&:nth-child(2n){
+				border-right: 1px solid #DDDDDD;
+			}
+			&:nth-child(3n){
+				border-right: none;
+			}
+			&:nth-child(6n){
+				border-right: none;
+			}
+			&:nth-last-child(-n+1){
+				border-right: none;
+			}
 		}
 	}
 	@include r(606){
@@ -73,11 +93,40 @@
 		}
 		&__item{
 			min-width: 150px;
+
 		}
 	}
 	@include r(449){
 		&__item{
 			min-width: 130px;
+			&:nth-child(2n){
+				border-right: 1px solid #DDDDDD;
+			}
+			&:nth-child(3n){
+				border-right: none;
+			}
+			&:nth-child(6n){
+				border-right: none;
+			}
+			&:nth-last-child(-n+1){
+				border-right: none;
+			}
+		}
+	}
+	@include r(389){
+		&__item{
+			&:nth-child(2n){
+				border-right: none;
+			}
+			&:nth-child(3n){
+				border-right: 1px solid #DDDDDD;
+			}
+			&:nth-child(6n){
+				border-right: none;
+			}
+			&:nth-last-child(-n+1){
+				border-right: none;
+			}
 		}
 	}
 }
