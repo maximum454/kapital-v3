@@ -29,21 +29,33 @@
 		}
 	}
 	@include r(1023){
-		grid-template-areas: "aside-right contant";
+		grid-template-areas: "aside-left contant";
 		grid-template-columns: 320px minmax(340px,1fr);
 		&--article{
 			grid-template-areas: "contant aside-right";
 			grid-template-columns: minmax(340px,640px)  320px;
+			.main__aside-right{
+				display: block;
+			}
 		}
-		&__aside-left{
+		&__aside-right{
 			display: none;
+		}
+		&__page{
+			h1{
+				font-size: 36px;
+				line-height: 40px;
+			}
 		}
 	}
 	@include r(767){
-		grid-template-areas: 'contant' 'aside-right';
+		grid-template-areas: 'contant' 'aside-left';
 		grid-template-columns: 1fr;
 		&--article{
-			grid-template-areas: "contant" "aside-right";
+			grid-template-areas: "contant";
+			.main__aside-right{
+				display: none;
+			}
 		}
 		&__page{
 			padding: 20px;

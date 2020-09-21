@@ -3241,7 +3241,7 @@ body.lock {
 
 @media only screen and (max-width: 1023px) {
   .main {
-    grid-template-areas: "aside-right contant";
+    grid-template-areas: "aside-left contant";
     grid-template-columns: 320px minmax(340px, 1fr);
   }
 
@@ -3250,8 +3250,17 @@ body.lock {
     grid-template-columns: minmax(340px, 640px) 320px;
   }
 
-  .main__aside-left {
+  .main--article .main__aside-right {
+    display: block;
+  }
+
+  .main__aside-right {
     display: none;
+  }
+
+  .main__page h1 {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -3383,12 +3392,16 @@ body.lock {
   }
 
   .main {
-    grid-template-areas: 'contant' 'aside-right';
+    grid-template-areas: 'contant' 'aside-left';
     grid-template-columns: 1fr;
   }
 
   .main--article {
-    grid-template-areas: "contant" "aside-right";
+    grid-template-areas: "contant";
+  }
+
+  .main--article .main__aside-right {
+    display: none;
   }
 
   .main__page {
