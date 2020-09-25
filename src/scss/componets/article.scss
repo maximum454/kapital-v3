@@ -125,4 +125,14 @@
 			}
 		}
 	}
+	@include r(425){
+		&__subtitle{
+			color: #000;
+			font-size: 20px;
+			line-height: 26px;
+			letter-spacing: 0.2px;
+			font-weight: 600;
+			margin: 20px 0 42px;
+		}
+	}
 }

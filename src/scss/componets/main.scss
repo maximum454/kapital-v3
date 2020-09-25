@@ -48,6 +48,14 @@
 			}
 		}
 	}
+	@include r(840){
+		&__page{
+			h1{
+				font-size: 30px;
+				line-height: 36px;
+			}
+		}
+	}
 	@include r(767){
 		grid-template-areas: 'contant' 'aside-left';
 		grid-template-columns: 1fr;
@@ -61,5 +69,13 @@
 			padding: 20px;
 		}
 
+	}
+	@include r(425){
+		&__page{
+			h1{
+				font-size: 24px;
+				line-height: 30px;
+			}
+		}
 	}
 }

@@ -1,0 +1,12 @@
+.similar{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 10px 0;
+	&__item{
+		background-color: #fff;
+		flex: 1 0 0;
+		min-width: 160px;
+		padding: 20px;
+	}
+}

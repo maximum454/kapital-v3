@@ -78,6 +78,14 @@ h2{
 	color: #777;
 }
 
+.news-partners{
+	background-color: #fff;
+	padding: 20px;
+	&__title{
+
+	}
+}
+
 //Шапка
 @import "componets/header";
 
@@ -164,3 +172,9 @@ h2{
 
 //Социальные ссылки
 @import "componets/social";
+
+//Похожие новости
+@import "componets/similar";
+
+//новости партнеров
+@import "componets/news-partners";
