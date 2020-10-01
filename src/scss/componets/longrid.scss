@@ -12,6 +12,7 @@
 	}
 	&__title{
 		color: #000;
+		font-size: 48px;
 		line-height: 1.1;
 		margin: 18px 0;
 	}
@@ -45,12 +46,20 @@
 	}
 	&__info{
 		justify-content: center;
+		margin-bottom: 10px;
 	}
 	&__img{
 		width: calc(100% + 80px);
 		margin-left: -40px;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		&.attachment{
+			padding: 20px;
+			background-attachment: scroll;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 		img{
 			width: 100%;
 			object-fit: cover;
@@ -109,6 +118,14 @@
 		padding: 0 50px;
 	}
 	@include r(767){
+		padding: 20px;
+		&__title{
+			font-size: 26px;
+		}
+		&__subtitle{
+			font-size: 22px;
+			line-height: 28px;
+		}
 		&__img{
 			width: calc(100% + 40px);
 			margin-left: -20px;
@@ -124,5 +141,4 @@
 			padding: 0;
 		}
 	}
-
 }

@@ -1,0 +1,65 @@
+.longrid-table{
+	max-width: 970px;
+	margin: 20px auto;
+	padding: 30px 40px 20px;
+	&.light{
+		background-color: rgba(#F5F5F5,.8);
+		color: #404040;
+	}
+	&.dark{
+		background-color: rgba(#000000,.8);
+		color: #fff;
+	}
+	&__header{
+		border-bottom: 5px solid;
+		padding-bottom: 20px;
+		h3{
+			margin: 0;
+		}
+	}
+	&__body{
+
+	}
+	&__item{
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid;
+	}
+	&__year{
+		flex: 1 0 0;
+		max-width: 80px;
+		min-width: 76px;
+		padding: 20px;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: bold;
+		border-right: 1px solid;
+	}
+	&__name{
+		flex: 1 0 0;
+		min-width: 186px;
+		padding: 20px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&__footer{
+		text-align: center;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 10px 0;
+	}
+	@include r(421){
+		padding: 20px;
+		&__item{
+			padding: 20px 0;
+		}
+		&__year{
+			max-width: 100%;
+			border: none;
+			padding: 0;
+		}
+		&__name{
+			padding: 0;
+		}
+	}
+}
