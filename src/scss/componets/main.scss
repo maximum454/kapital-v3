@@ -7,6 +7,10 @@
 		grid-template-areas: "contant aside-right";
 		grid-template-columns: minmax(280px, 970px)  320px;
 	}
+	&--longrid{
+		grid-template-areas: "contant";
+		grid-template-columns: 1fr;
+	}
 
 	&__aside-left{
 		grid-area: aside-left;
@@ -38,6 +42,10 @@
 				display: block;
 			}
 		}
+		&--longrid{
+			grid-template-areas: "contant";
+			grid-template-columns: 1fr;
+		}
 		&__aside-right{
 			display: none;
 		}
@@ -64,6 +72,10 @@
 			.main__aside-right{
 				display: none;
 			}
+		}
+		&--longrid{
+			grid-template-areas: "contant";
+			grid-template-columns: 1fr;
 		}
 		&__page{
 			padding: 20px;

@@ -1,0 +1,128 @@
+.longrid{
+	background-color: #fff;
+	margin: 10px 0;
+	padding: 20px 40px;
+	overflow: hidden;
+	.row{
+		max-width: 890px;
+		margin: 0 auto;
+	}
+	&__header{
+		text-align: center;
+	}
+	&__title{
+		color: #000;
+		line-height: 1.1;
+		margin: 18px 0;
+	}
+	&__subtitle{
+		color: #000;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0.2px;
+		font-weight: 600;
+		margin: 20px 0 42px;
+	}
+	&__body{
+		h3{
+			font-size: 28px;
+			line-height: 30px;
+			text-align: center;
+		}
+		p{
+			font-size: 16px;
+			line-height: 24px;
+			margin: 20px 0 40px;
+			a{
+				color: #00B25D;
+				font-weight: 600;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	&__info{
+		justify-content: center;
+	}
+	&__img{
+		width: calc(100% + 80px);
+		margin-left: -40px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		img{
+			width: 100%;
+			object-fit: cover;
+			display: block;
+			margin-bottom: 10px;
+			height: auto;
+		}
+	}
+	&__figcaption{
+		text-align: center;
+	}
+	&__figcaption-title{
+		color: #404040;
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0!important;
+	}
+	&__figcaption-subtitle{
+		color: #777777;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 0!important;
+	}
+	&__blockquote{
+		font-size: 21px;
+		line-height: 28px;
+		font-weight: bold;
+		font-style: italic;
+		position: relative;
+		padding: 10px 40px;
+		margin: 20px 0;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-color: #00B25D;
+			width: 150px;
+			height: 2px;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-color: #00B25D;
+			width: 150px;
+			height: 2px;
+		}
+	}
+	&__slider{
+		max-width: 990px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+	@include r(767){
+		&__img{
+			width: calc(100% + 40px);
+			margin-left: -20px;
+			img{
+				width: 100%;
+				object-fit: cover;
+				display: block;
+				margin-bottom: 10px;
+				height: auto;
+			}
+		}
+		&__slider{
+			padding: 0;
+		}
+	}
+
+}

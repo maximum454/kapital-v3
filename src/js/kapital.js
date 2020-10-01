@@ -25,6 +25,23 @@ $(function(){
         slidesToScroll: 1,
     });
 
+    $('.js-slider-longrid').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
+    });
+
     //слайдер выбор редакции в сайдбаре
     $('.js-editors-slider').slick({
         dots: true,

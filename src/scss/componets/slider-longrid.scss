@@ -1,0 +1,53 @@
+.slider-longrid{
+	&__item{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__img{
+		flex: 2 0 0;
+		min-width: 473px;
+		img{
+			max-width: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__txt{
+		flex: 1 0 0;
+		min-width: 277px;
+		padding: 20px;
+		background-color: #00B25D;
+		p{
+			color: #fff;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	&__footer{
+		min-width: 100%;
+		text-align: center;
+		color: #777777;
+		font-size: 12px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+	.slick-arrow{
+		background-image: url("../img/slider-longrid-arrow.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.slick-next, .slick-prev{
+		height: 40px;
+		width: 20px;
+	}
+	.slick-next{
+		right: -42px;
+		transform: translate(0,-50%) rotate(180deg);
+	}
+	.slick-prev{
+		left: -42px;
+	}
+	@include r(860){
+
+	}
+}
