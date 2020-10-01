@@ -23,6 +23,9 @@ Cтраница Рубрик
   
 Cтраница спецпроектов
   https://maximum454.github.io/kapital-v3/build/special.html
+  
+Cтраница Лонгриды
+  https://maximum454.github.io/kapital-v3/build/longrid.html
  
 Верстка использует сборку Gulp
  Старт: gulp
