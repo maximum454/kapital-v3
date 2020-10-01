@@ -4,6 +4,7 @@
 @@include('partials/jquery.knob.js')
 @@include('partials/slick.js')
 @@include('partials/likely.js')
+@@include('partials/lazysizes.min.js')
 
 $(function(){
     var nav = priorityNav.init({
