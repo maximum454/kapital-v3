@@ -3366,12 +3366,28 @@ body.lock {
   min-width: 277px;
   padding: 20px;
   background-color: #00B25D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .slider-longrid__txt p {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
+}
+
+.slider-longrid__count {
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: auto;
+  letter-spacing: 4px;
 }
 
 .slider-longrid__footer {

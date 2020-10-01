@@ -17,11 +17,21 @@
 		min-width: 277px;
 		padding: 20px;
 		background-color: #00B25D;
+		display: flex;
+		flex-direction: column;
 		p{
 			color: #fff;
 			font-size: 16px;
 			line-height: 24px;
 		}
+	}
+	&__count{
+		color: #fff;
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 500;
+		margin-top: auto;
+		letter-spacing: 4px;
 	}
 	&__footer{
 		min-width: 100%;

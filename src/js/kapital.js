@@ -26,7 +26,17 @@ $(function(){
         slidesToScroll: 1,
     });
 
-    $('.js-slider-longrid').slick({
+    var $sliderLongrid = $('.js-slider-longrid');
+    var $status = $('.slider-longrid__count');
+
+    $sliderLongrid.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    });
+
+    $sliderLongrid.slick({
+        autoplay: true,
         dots: false,
         arrows: true,
         infinite: true,
@@ -42,6 +52,7 @@ $(function(){
             }
         ]
     });
+
 
     //слайдер выбор редакции в сайдбаре
     $('.js-editors-slider').slick({
