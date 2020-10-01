@@ -4627,4 +4627,26 @@ $(function(){
         loadPopularNews(filterBy);
     });
     loadPopularNews('week');
+
+    function countView(element) {
+        if (element) {
+            var data = {};
+            data['View[model]'] = element.dataset.model;
+            data['View[id]']    = element.dataset.id;
+            data['View[token]'] = element.dataset.token;
+            $.ajax({
+                type: "POST",
+                url: '/api/counter/view',
+                data: data
+            });
+        }
+    }
+
+    /**
+     * Get counters on page
+     */
+    var viewsCounters = document.getElementsByClassName("js-views-counter");
+    Array.prototype.forEach.call(viewsCounters, function(el) {
+        countView(el);
+    });
 });
