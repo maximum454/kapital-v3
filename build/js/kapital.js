@@ -4588,6 +4588,7 @@ $(function(){
         slidesToScroll: 1,
     });
 
+    //Слайдер для лонгрида с счетчиком
     var $sliderLongrid = $('.js-slider-longrid');
     var $status = $('.slider-longrid__count');
 
@@ -4614,6 +4615,7 @@ $(function(){
             }
         ]
     });
+    //end
 
 
     //слайдер выбор редакции в сайдбаре
@@ -4663,4 +4665,30 @@ $(function(){
     Array.prototype.forEach.call(viewsCounters, function(el) {
         countView(el);
     });
+
+
+    /*infinity scroll*/
+    var listElm = document.querySelector('#infinite-list');
+
+    // Add 20 items.
+    var nextItem = 1;
+    var loadMore = function() {
+        for (var i = 0; i < 1; i++) {
+            var item = document.createElement('li');
+            item.innerText = 'Item ' + nextItem++;
+            listElm.appendChild(item);
+        }
+    }
+
+    // Detect when scrolled to bottom.
+    listElm.addEventListener('scroll', function() {
+        if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
+            loadMore();
+        }
+    });
+
+    // Initially load some items.
+    loadMore();
+
+    /*end infinity scroll*/
 });

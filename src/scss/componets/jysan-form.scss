@@ -1,0 +1,103 @@
+.jysan-form{
+	padding: 24px 20px;
+	background: #1D1D1F;
+	border-radius: 7px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	font-family: 'Roboto', Sans-Serif;
+	&__body{
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	&__logo{
+		display: block;
+		text-decoration: none;
+		background-image: url("../img/logo-jysan.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 160px;
+		height: 21px;
+		margin: 0 auto 20px;
+	}
+	&__title{
+		display: block;
+		text-decoration: none;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 24px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0 0 15px;
+
+	}
+	&__subtitle{
+		display: block;
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 136.84%;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0 auto 34px;
+	}
+	&__row{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -6px;
+	}
+	&__input{
+		flex: 1 0 0;
+		max-width: 100%;
+		background: #FFFFFF;
+		border-radius: 2px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		display: flex;
+		align-items: center;
+		color: #A2A2A2;
+		padding: 6px 10px;
+		border: 0;
+		margin: 10px 6px;
+	}
+	&__submit{
+		flex: 1 0 0;
+		max-width: 140px;
+		width: 100%;
+		padding: 9px 10px;
+		background: #003E7B;
+		border-radius: 2px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 13px;
+		text-align: center;
+		color: #FFFFFF;
+		border: 0;
+		margin: 10px 6px;
+	}
+	&__footer{
+		margin-top: 10px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		text-align: center;
+		color: #9D9DA6;
+	}
+	 @media all and (max-width: 480px){
+		 &__row{
+			 flex-direction: column;
+		 }
+		 &__input{
+			 margin: 10px 0;
+		 }
+		 &__submit{
+			 max-width: 100%;
+			 margin: 10px 0;
+		 }
+	 }
+}

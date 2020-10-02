@@ -3568,6 +3568,226 @@ body.lock {
   margin: 10px 0;
 }
 
+.jysan-form {
+  padding: 24px 20px;
+  background: #1D1D1F;
+  border-radius: 7px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  font-family: 'Roboto', Sans-Serif;
+}
+
+.jysan-form__body {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.jysan-form__logo {
+  display: block;
+  text-decoration: none;
+  background-image: url("../img/logo-jysan.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 160px;
+  height: 21px;
+  margin: 0 auto 20px;
+}
+
+.jysan-form__title {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 0 15px;
+}
+
+.jysan-form__subtitle {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 136.84%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto 34px;
+}
+
+.jysan-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.jysan-form__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  max-width: 100%;
+  background: #FFFFFF;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A2A2A2;
+  padding: 6px 10px;
+  border: 0;
+  margin: 10px 6px;
+}
+
+.jysan-form__submit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  max-width: 140px;
+  width: 100%;
+  padding: 9px 10px;
+  background: #003E7B;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
+  margin: 10px 6px;
+}
+
+.jysan-form__footer {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: center;
+  color: #9D9DA6;
+}
+
+.jysan-form {
+  padding: 24px 20px;
+  background: #1D1D1F;
+  border-radius: 7px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  font-family: 'Roboto', Sans-Serif;
+}
+
+.jysan-form__body {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.jysan-form__logo {
+  display: block;
+  text-decoration: none;
+  background-image: url("../img/logo-jysan.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 160px;
+  height: 21px;
+  margin: 0 auto 20px;
+}
+
+.jysan-form__title {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 0 15px;
+}
+
+.jysan-form__subtitle {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 136.84%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto 34px;
+}
+
+.jysan-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.jysan-form__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  max-width: 100%;
+  background: #FFFFFF;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A2A2A2;
+  padding: 6px 10px;
+  border: 0;
+  margin: 10px 6px;
+}
+
+.jysan-form__submit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  max-width: 140px;
+  width: 100%;
+  padding: 9px 10px;
+  background: #003E7B;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
+  margin: 10px 6px;
+}
+
+.jysan-form__footer {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: center;
+  color: #9D9DA6;
+}
+
 @media (min-width: 767px) {
   .currency__name {
     font-size: calc(9px + 2 * (100vw / 1360));
@@ -4117,6 +4337,40 @@ body.lock {
 
   .editors-aside {
     margin: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .jysan-form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .jysan-form__input {
+    margin: 10px 0;
+  }
+
+  .jysan-form__submit {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .jysan-form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .jysan-form__input {
+    margin: 10px 0;
+  }
+
+  .jysan-form__submit {
+    max-width: 100%;
+    margin: 10px 0;
   }
 }
 
