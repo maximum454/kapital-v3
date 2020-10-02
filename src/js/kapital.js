@@ -5,6 +5,11 @@
 @@include('partials/slick.js')
 @@include('partials/likely.js')
 @@include('partials/lazysizes.min.js')
+@@include('partials/audiobutton.js')
+@@include('partials/audioplayer.js')
+@@include('partials/datepicker.min.js')
+@@include('partials/jquery.mask.js')
+@@include('partials/medium-zoom.min.js')
 
 $(function(){
     var nav = priorityNav.init({

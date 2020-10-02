@@ -1,0 +1,54 @@
+.article-headphone{
+	background-color: #F5F5F5;
+	border-radius: 2px;
+	margin-right: 0;
+	margin-left: auto;
+	padding: 8px 14px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	&:hover{
+		background-color: #E1E1E1;
+	}
+	i{
+		display: inline-block;
+		background-image: url("../img/bx-headphone.svg");
+		background-repeat: repeat-x;
+		background-position: center;
+		background-size: cover;
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+}
+
+.article-audio{
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	z-index: 100;
+	width: 100%;
+	max-width: 400px;
+	height: 60px;
+	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+}
+@include r(767){
+	.article-headphone{
+		padding: 8px 11px;
+		overflow: hidden;
+		color: #F5F5F5;
+		width: 40px;
+		height: 30px;
+		&:hover{
+			background-color: #E1E1E1;
+		}
+		i{
+			color: #383838;
+		}
+	}
+	.article-audio{
+		right: 0;
+		max-width: 100%;
+	}
+}
