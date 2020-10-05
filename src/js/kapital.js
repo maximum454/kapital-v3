@@ -69,6 +69,11 @@ $(function(){
         speed: 300
     });
 
+    var imgZoom = mediumZoom('[data-zoomable]', {
+        background: 'rgba(255,255,255,.9)',
+        scrollOffset: 0
+    });
+
     //табы популярные новости
     function loadPopularNews(filterBy) {
         $('.js-popular-aside').hide();

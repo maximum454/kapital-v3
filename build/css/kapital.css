@@ -3337,6 +3337,123 @@ body.lock {
   padding: 0 50px;
 }
 
+.longrid__figure {
+  max-width: 890px;
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  margin: 20px  auto;
+}
+
+.longrid__figure:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 50px;
+  height: 2px;
+  background-color: #00B25D;
+}
+
+.longrid__figure:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 50px;
+  height: 2px;
+  background-color: #00B25D;
+}
+
+.longrid__figure img {
+  max-width: 100%;
+}
+
+.longrid__figure p {
+  color: #000;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.longrid__figure span {
+  color: #777777;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.longrid__list {
+  max-width: 660px;
+  margin: 20px auto;
+  color: #404040;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.longrid__news {
+  max-width: 560px;
+  margin: 20px auto;
+}
+
+.longrid__news:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.longrid__news:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.longrid__news .main-news__anons {
+  margin: 0;
+}
+
+.longrid__dosser {
+  max-width: 390px;
+  margin: 20px auto;
+  border-top: none;
+  border-top: none;
+}
+
+.longrid__dosser .dosser-aside__title {
+  font-size: 18px;
+  color: #404040;
+  font-weight: 800;
+  letter-spacing: .2px;
+  text-decoration: none;
+  display: block;
+  margin: 0 0 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.longrid__dosser .dosser-aside__img {
+  margin-right: 20px;
+}
+
+.longrid__dosser .dosser-aside__txt {
+  margin: 0;
+}
+
 .slider-longrid__item {
   display: -webkit-box;
   display: -ms-flexbox;
