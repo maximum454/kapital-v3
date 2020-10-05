@@ -3454,6 +3454,17 @@ body.lock {
   margin: 0;
 }
 
+.longrid__columns {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+  margin: 20px auto;
+}
+
+.longrid__columns p {
+  margin: 0 0 20px;
+}
+
 .slider-longrid__item {
   display: -webkit-box;
   display: -ms-flexbox;
